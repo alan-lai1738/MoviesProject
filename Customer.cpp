@@ -6,10 +6,7 @@ Customer::Customer(string first, string last, int id)
   customerSecondName = std::move(last);
   customerID = id;
 }
-Customer::~Customer()
-{
-  
-}
+
 void Customer::addToHistory(Transaction* t)
 {
   history.push_back(t);
@@ -67,5 +64,5 @@ void Customer::returnADVD(char movieType, int movieIndex)
 
 bool Customer::isCurrentlyBorrowing(char movieType, int movieIndex)
 {
-  return count(borrowedMovies.begin(), borrowedMovies.end(), make_pair(movieType, movieIndex));
+  return count(borrowedMovies.begin(), borrowedMovies.end(), make_pair(movieType, movieIndex)) != 0;
 }

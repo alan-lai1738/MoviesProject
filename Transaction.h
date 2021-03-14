@@ -13,7 +13,7 @@ class Transaction
 
   public:
     Transaction(const char& movType, const string& movTitle, const string& dirName, const string& customerName, const char& type);
-    ~Transaction();
+  
     private:
       string movieType;
       string movieTitle;

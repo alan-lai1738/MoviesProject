@@ -18,12 +18,12 @@ using namespace std;
 //void testAll();
 
 int main() {
-
+ // cout << "test" << endl;
 Store s;
 s.fillCustomerDatabase("data4customers.txt");
-  s.stockDVDShelves("data4movies.txt");
-  s.readTransactions("data4commands.txt");
- //s.fillCustomerDatabase("AlanCustomers.txt");
+s.stockDVDShelves("data4movies.txt");
+s.readTransactions("data4commands.txt");
+s.fillCustomerDatabase("AlanCustomers.txt");
   /*s.stockDVDShelves("AlanMovies.txt");
   s.readTransactions("AlanCommands.txt");*/
   

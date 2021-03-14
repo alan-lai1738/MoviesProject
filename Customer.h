@@ -16,7 +16,6 @@ class Customer
   }
   public:
     Customer(string first, string last, int id);
-    ~Customer();
     void addToHistory(Transaction* t);
     string getFirstName() const;
     string getLastName() const;

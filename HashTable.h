@@ -16,12 +16,8 @@ class HashTable{
     return os;
   }
   public:
-    HashTable()
-    {
-    }
-    ~HashTable()
-    {
-    }
+    HashTable() {}
+    ~HashTable() {}            
     
     void put(K& key, V& value)
     {
