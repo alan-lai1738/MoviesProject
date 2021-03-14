@@ -18,7 +18,7 @@ protected:
   string director;
   string title;
   int releaseYear;
-  char type  = 'z';
+  char type = 'z';
   int borrowed;
 
   virtual ostream &display(ostream &os) const = 0;
@@ -32,12 +32,12 @@ protected:
 public:
   Movie(const int &stock, const string &title, const string &director,
         const int &releaseYear) {
-          this->stock = stock;
-          this->title = title;
-          this->director = director;
-          this->releaseYear = releaseYear;
-          this->borrowed = 0;
-        }
+    this->stock = stock;
+    this->title = title;
+    this->director = director;
+    this->releaseYear = releaseYear;
+    this->borrowed = 0;
+  }
   // Setters and getters for values
   string getDirector() const { return director; }
 

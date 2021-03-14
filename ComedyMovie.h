@@ -13,7 +13,8 @@ using namespace std;
 class ComedyMovie : public Movie {
 public:
   ComedyMovie(const int &stock, const string &title, const string &director,
-              const int &releaseYear) : Movie(stock, title, director, releaseYear) {
+              const int &releaseYear)
+      : Movie(stock, title, director, releaseYear) {
     this->type = 'F';
   }
   ostream &display(ostream &os) const override {

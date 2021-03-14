@@ -31,7 +31,7 @@ void Inventory::addClassicMovie(const int &stock, const string &title,
                                 const string &majActorLastName,
                                 const int &relMonth, const int &relYear) {
   auto c = new ClassicMovie(stock, title, director, majActorFirstName,
-                                     majActorLastName, relMonth, relYear);
+                            majActorLastName, relMonth, relYear);
   for (auto &i : classicMovieShelf) {
     if (c->equals(i)) {
       i->setStock(c->getStockAmt() + i->getStockAmt());
@@ -109,12 +109,12 @@ bool Inventory::borrowMovie(const string &movieType, const int &index) {
           classicMovieShelf[index]->getBorrowedAmt() + 1);
       return true;
     }
-      cerr << "ERROR: Insufficient stock of "
-           << classicMovieShelf[index]->getTitle() << ", "
-           << classicMovieShelf[index]->getReleaseMonth() << " "
-           << classicMovieShelf[index]->getReleaseYear() << endl;
-      return false;
-  } 
+    cerr << "ERROR: Insufficient stock of "
+         << classicMovieShelf[index]->getTitle() << ", "
+         << classicMovieShelf[index]->getReleaseMonth() << " "
+         << classicMovieShelf[index]->getReleaseYear() << endl;
+    return false;
+  }
   if (movieType == "F") {
     int stockAmt = comedyMovieShelf[index]->getStockAmt();
     if (stockAmt >= 1) {
@@ -123,12 +123,12 @@ bool Inventory::borrowMovie(const string &movieType, const int &index) {
       comedyMovieShelf[index]->setBorrowed(
           comedyMovieShelf[index]->getBorrowedAmt() + 1);
       return true;
-    } 
-      cerr << "ERROR: Insufficient stock of "
-           << comedyMovieShelf[index]->getTitle() << ", "
-           << comedyMovieShelf[index]->getReleaseYear() << endl;
-      return false;
-  } 
+    }
+    cerr << "ERROR: Insufficient stock of "
+         << comedyMovieShelf[index]->getTitle() << ", "
+         << comedyMovieShelf[index]->getReleaseYear() << endl;
+    return false;
+  }
   if (movieType == "D") {
     int stockAmt = dramaMovieShelf[index]->getStockAmt();
     if (stockAmt >= 1) {
@@ -137,11 +137,11 @@ bool Inventory::borrowMovie(const string &movieType, const int &index) {
       dramaMovieShelf[index]->setBorrowed(
           dramaMovieShelf[index]->getBorrowedAmt() + 1);
       return true;
-    } 
-      cerr << "ERROR: Insufficient stock of "
-           << dramaMovieShelf[index]->getTitle() << ", "
-           << dramaMovieShelf[index]->getReleaseYear() << endl;
-      return false;
+    }
+    cerr << "ERROR: Insufficient stock of "
+         << dramaMovieShelf[index]->getTitle() << ", "
+         << dramaMovieShelf[index]->getReleaseYear() << endl;
+    return false;
   }
   return false;
 }

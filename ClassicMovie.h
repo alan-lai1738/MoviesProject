@@ -16,7 +16,8 @@ public:
   // Default constructor
   ClassicMovie(const int &stock, const string &title, const string &director,
                const string &majActorFirstName, const string &majActorLastName,
-               const int &relMonth, const int &relYear): Movie(stock, title, director, relYear) {
+               const int &relMonth, const int &relYear)
+      : Movie(stock, title, director, relYear) {
     this->majorActorFirst = majActorFirstName;
     this->majorActorLast = majActorLastName;
     this->releaseMonth = relMonth;
@@ -24,7 +25,9 @@ public:
   }
 
   // copy constructor
-  explicit ClassicMovie(ClassicMovie *other) : Movie(other->getStockAmt(), other->getTitle(), other->getDirector(), other->getReleaseYear()){
+  explicit ClassicMovie(ClassicMovie *other)
+      : Movie(other->getStockAmt(), other->getTitle(), other->getDirector(),
+              other->getReleaseYear()) {
     this->releaseMonth = other->getReleaseMonth();
     this->majorActorFirst = other->getMajorActorFirst();
     this->majorActorLast = other->getMajorActorLast();
@@ -78,7 +81,8 @@ public:
       return releaseMonth < rhs->getReleaseMonth();
     }
     string actorName = majorActorFirst + " " + majorActorLast;
-    string actorNameRHS = rhs->getMajorActorFirst() + " " + rhs->getMajorActorLast();
+    string actorNameRHS =
+        rhs->getMajorActorFirst() + " " + rhs->getMajorActorLast();
     if (actorName != actorNameRHS) {
       return actorName < actorNameRHS;
     }

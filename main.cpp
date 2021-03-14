@@ -15,16 +15,18 @@
 using namespace std;
 
 // forward declaration, implementation in store_test.cpp
-// void testAll();
+void testAll();
 
 int main() {
+  testAll();
+  cout << "Done." << endl;
   // cout << "test" << endl;
-  Store s;
+  /*Store s;
   s.fillCustomerDatabase("data4customers.txt");
   s.stockDVDShelves("data4movies.txt");
   s.readTransactions("data4commands.txt");
   // s.fillCustomerDatabase("AlanCustomers.txt");
-  /*s.stockDVDShelves("AlanMovies.txt");
+  s.stockDVDShelves("AlanMovies.txt");
   s.readTransactions("AlanCommands.txt");*/
 
   /* Store s;
