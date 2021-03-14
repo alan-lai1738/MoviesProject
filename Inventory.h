@@ -1,10 +1,10 @@
 #ifndef INVENTORY_H
 #define INVENTORY_H
-#include "Movie.h"
-#include "DramaMovie.h"
 #include "ClassicMovie.h"
 #include "ComedyMovie.h"
-#include<algorithm>
+#include "DramaMovie.h"
+#include "Movie.h"
+#include <algorithm>
 #include <string>
 #include <vector>
 
@@ -14,17 +14,17 @@ class Inventory
   friend ostream& operator<<(ostream& os, const Inventory& inv)
   {
     os << "____________________[Viewing Inventory]____________________" << endl;
-    for(int i = 0; i < inv.comedyMovieShelf.size(); i++)
+    for(auto i : inv.comedyMovieShelf)
     {
-      os << *(inv.comedyMovieShelf[i]);
+      os << *(i);
     }
-    for(int j = 0; j < inv.dramaMovieShelf.size(); j++)
+    for(auto j : inv.dramaMovieShelf)
     {
-       os << *(inv.dramaMovieShelf[j]);
+       os << *(j);
     }
-    for(int k = 0; k < inv.classicMovieShelf.size(); k++)
+    for(auto k : inv.classicMovieShelf)
     {
-       os << *(inv.classicMovieShelf[k]);
+       os << *(k);
     }
     return os;
   }
@@ -32,21 +32,21 @@ class Inventory
     Inventory();
     ~Inventory();
     
-    void addClassicMovie(int stock, string title, string director, string majActorFirstName, string majActorLastName, int relMonth, int relYear);
+    void addClassicMovie(const int& stock, const string& title, const string& director, const string& majActorFirstName, const string& majActorLastName, const int& relMonth, const int& relYear);
     
-    void addComedyMovie(int stock, string title, string director, int releaseYear);
+    void addComedyMovie(const int& stock, const string& title, const string& director, const int& releaseYear);
 
-    void addDramaMovie(int stock, string title, string director, int releaseYear);
+    void addDramaMovie(const int& stock, const string& title, const string& director, const int& releaseYear);
 
-    bool borrowMovie(string movie_type, int index);
-    void returnMovie(string movie_type, int index);
+    bool borrowMovie(const string& movieType, const int& index);
+    void returnMovie(const string& movieType, const int& index);
 
-    ClassicMovie* peekClassicMovie(int index) const;
-    ComedyMovie* peekComedyMovie(int index) const;
-    DramaMovie* peekDramaMovie(int index) const;
-    int getClassicIndex(int month, int year, string first, string last);
-    int getComedyIndex(int year, string title);
-    int getDramaIndex(string director, string title);
+    ClassicMovie* peekClassicMovie(const int& index) const;
+    ComedyMovie* peekComedyMovie(const int& index) const;
+    DramaMovie* peekDramaMovie(const int& index) const;
+    int getClassicIndex(const int& month, const int& year, const string& first, const string& last);
+    int getComedyIndex(const int& year, const string& title);
+    int getDramaIndex(const string& director, const string& title);
     void sortMovies();
   private:
     vector<ClassicMovie*> classicMovieShelf;

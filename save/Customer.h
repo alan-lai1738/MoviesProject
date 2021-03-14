@@ -15,7 +15,7 @@ class Customer
     return os;
   }
   public:
-    Customer(string first, string last, int id);
+    Customer(string& first, string& last, int& id);
     ~Customer();
     void addToHistory(Transaction* t);
     string getFirstName() const;

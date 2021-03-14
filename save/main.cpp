@@ -2,15 +2,16 @@
 /**
  * Driver for starting movie store tests
  */
-#include "ClassicMovie.h"
-#include "ComedyMovie.h"
-#include "Customer.h"
-#include "DramaMovie.h"
-#include "HashTable.h"
-#include "Movie.h"
-#include "Store.h"
-#include "Transaction.h"
+
 #include <iostream>
+#include "Movie.h"
+#include "ComedyMovie.h"
+#include "DramaMovie.h"
+#include "ClassicMovie.h"
+#include "Transaction.h"
+#include "Customer.h"
+#include "HashTable.h"
+#include "Store.h"
 #include <string>
 using namespace std;
 
@@ -19,8 +20,8 @@ using namespace std;
 
 int main() {
 
-Store s;
-s.fillCustomerDatabase("data4customers.txt");
+  Store s;
+  s.fillCustomerDatabase("data4customers.txt");
   s.stockDVDShelves("data4movies.txt");
   s.readTransactions("data4commands.txt");
  //s.fillCustomerDatabase("AlanCustomers.txt");

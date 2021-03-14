@@ -8,34 +8,21 @@
 #include <sstream>
 #include <string>
 #include <vector>
-
 using namespace std;
 
 
 class ClassicMovie: public Movie {
   public:
     // Default constructor
-    ClassicMovie(const int& stock, const string& title, const string& director, const string& majActorFirstName, const string& majActorLastName, const int& relMonth, const int& relYear)
+    explicit ClassicMovie(int& stock, string& title, string& director, string& majActorFirstName, string& majActorLastName, int& relMonth, int& relYear)
     {
-      this->stock =  stock;
-      this->title =  title;
+      this->stock = stock;
+      this->title = title;
       this->director = director;
       this->releaseYear = relYear;
       this->majorActorFirst = majActorFirstName;
       this->majorActorLast = majActorLastName;
       this->releaseMonth = relMonth;
-      this->type = 'C';
-    }
-    // copy constructor
-    ClassicMovie(ClassicMovie* other)
-    {
-      this->stock = other->getStockAmt();
-      this->title = other->getTitle();
-      this->director = other->getDirector();
-      this->releaseMonth = other->getReleaseMonth();
-      this->releaseYear = other->getReleaseYear();
-      this->majorActorFirst = other->getMajorActorFirst();
-      this->majorActorLast = other->getMajorActorLast();
       this->type = 'C';
     }
     //Getters
@@ -62,7 +49,7 @@ class ClassicMovie: public Movie {
     bool equals(Movie* other) const override
     {
       assert(other != nullptr);
-      ClassicMovie* otherMovie = dynamic_cast<ClassicMovie*>(other);
+      auto ClassicMovie* otherMovie = dynamic_cast<ClassicMovie*>(other);
       //assert(otherMovie && otherMovie == other);
       return(
       title == otherMovie->title &&

@@ -1,9 +1,8 @@
 #ifndef HASHTABLE_H
 #define HASHTABLE_H
 #include <iostream>
-#include <string>
 #include <vector>
-
+#include <string>
 using namespace std;
 template<typename K, typename V>
 class HashTable{
@@ -37,7 +36,7 @@ class HashTable{
       }
     }
     
-    void remove(K key)
+    void remove(K& key)
     {
       if(!find(keys.begin(), keys.end(), key) != keys.end())
       {
@@ -48,12 +47,12 @@ class HashTable{
       values.erase(values.begin()+index);
     }
 
-bool contains(K key)
+bool contains(K& key)
 {
   return find(keys.begin(), keys.end(), key) != keys.end();
 }
 
-V& get(K key)
+V& get(K& key)
 {
   int index = getIndex(key);
   return values[index];

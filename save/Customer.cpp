@@ -1,9 +1,9 @@
 #include "Customer.h"
 
-Customer::Customer(string first, string last, int id)
+Customer::Customer(string& first, string& last, int& id)
 {
-  customerFirstName = std::move(first);
-  customerSecondName = std::move(last);
+  customerFirstName = first;
+  customerSecondName = last;
   customerID = id;
 }
 Customer::~Customer()
@@ -62,10 +62,18 @@ void Customer::returnADVD(char movieType, int movieIndex)
       return;
     }
   }
- }
+  //cerr << "SOMEHOW A MOVIE DIDNT GET RETURNED...PLEASE DO PROPER CHECKS IN STORE .CPP BEFORE RUNNING THIS METHOD" << endl;
+}
 
 
 bool Customer::isCurrentlyBorrowing(char movieType, int movieIndex)
 {
-  return count(borrowedMovies.begin(), borrowedMovies.end(), make_pair(movieType, movieIndex));
+  /*for(int i = 0; i < borrowedMovies.size(); i++)
+  {
+    if(borrowedMovies[i].first == movieType && borrowedMovies[i].second == movieIndex)
+    {
+
+    }
+  }*/
+  return count(borrowedMovies.begin(), borrowedMovies.end(), make_pair(movieType, movieIndex)!=0);
 }

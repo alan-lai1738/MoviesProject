@@ -5,15 +5,15 @@
 #include <cassert>
 #include <fstream>
 #include <iostream>
-#include <sstream>
 #include <string>
+#include <sstream>
 #include <vector>
 using namespace std;
 
 
 class DramaMovie: public Movie {
   public:
-    DramaMovie(const int& stock, const string& title, const string& director, const int& releaseYear)
+    DramaMovie(int& stock, string& title, string& director, int& releaseYear)
     {
       this->stock = stock;
       this->title = title;

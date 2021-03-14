@@ -2,9 +2,9 @@
 #define MOVIE_H
 
 
-#include <fstream>
-#include <iostream>
 #include <string>
+#include <iostream>
+#include <fstream>
 using namespace std;
 
 class Movie
@@ -72,34 +72,6 @@ class Movie
     {
       return borrowed;
     }
-
-    /*
-    void operator=(Movie& rhs)
-    {
-      return set(&rhs);
-    }
-    */
-    
-    /*bool operator==(Movie& rhs) const
-    {
-      return equals(&rhs);
-    }*/
-/*
-    bool operator!=(Movie& rhs) const
-    {
-      return !(equals(&rhs));
-    }
-
-    bool operator<(Movie& rhs) const
-    {
-      return lessThan(&rhs);
-    }
-    
-    bool operator>(Movie& rhs) const
-    {
-      return greaterThan(&rhs);
-    }
-    */
 };
 
 #endif

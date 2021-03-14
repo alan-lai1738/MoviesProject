@@ -8,42 +8,42 @@ Inventory::~Inventory()
   
 }
 //Add movie methods
-void Inventory::addDramaMovie(const int& stock, const string& title, const string& director, const int& releaseYear)
+void Inventory::addDramaMovie(int& stock, string& title, string& director, int& releaseYear)
 { 
-  DramaMovie* d = new DramaMovie(stock, title, director, releaseYear);
-  for (auto & i : dramaMovieShelf)
+  auto DramaMovie* d = new DramaMovie(stock, title, director, releaseYear);
+  for(auto & i : dramaMovieShelf)
   {
-    if(d->equals(i))
+    if(d->equals(dramaMovieShelf[i]))
     {
-      i->setStock(d->getStockAmt()+i->getStockAmt());
+      dramaMovieShelf[i]->setStock(d->getStockAmt()+dramaMovieShelf[i]->getStockAmt());
       return;
     }
   }
   dramaMovieShelf.push_back(d);
 }
 
-void Inventory::addComedyMovie(const int& stock, const string& title, const string& director, const int& releaseYear)
+void Inventory::addComedyMovie(int& stock, string& title, string& director, int& releaseYear)
 {
-  ComedyMovie* f = new ComedyMovie(stock, title, director, releaseYear);
+  auto ComedyMovie* f = new ComedyMovie(stock, title, director, releaseYear);
   for(auto & i : comedyMovieShelf)
   {
-    if(f->equals(i))
+    if(f->equals(comedyMovieShelf[i]))
     {
-      i->setStock(f->getStockAmt()+i->getStockAmt());
+      comedyMovieShelf[i]->setStock(f->getStockAmt()+comedyMovieShelf[i]->getStockAmt());
       return;
     }
   }
   comedyMovieShelf.push_back(f);
 }
 
-void Inventory::addClassicMovie(const int& stock, const string& title, const string& director, const string& majActorFirstName, const string& majActorLastName, const int& relMonth, const int& relYear)
+void Inventory::addClassicMovie(int& stock, string& title, string& director, string& majActorFirstName, string& majActorLastName, int& relMonth, int& relYear)
 {
   ClassicMovie* c = new ClassicMovie(stock, title, director, majActorFirstName, majActorLastName, relMonth, relYear);
-  for(auto & i : classicMovieShelf)
+  for(int i = 0; i < classicMovieShelf.size(); i++)
   {
-    if(c->equals(i))
+    if(c->equals(classicMovieShelf[i]))
     {
-      i->setStock(c->getStockAmt()+i->getStockAmt());
+      classicMovieShelf[i]->setStock(c->getStockAmt()+classicMovieShelf[i]->getStockAmt());
       return;
     }
   }
@@ -51,7 +51,7 @@ void Inventory::addClassicMovie(const int& stock, const string& title, const str
 }
 
 //Getters
-ClassicMovie* Inventory::peekClassicMovie(const int& index) const
+ClassicMovie* Inventory::peekClassicMovie(int& index) const
 {
   if(index >= classicMovieShelf.size() || index < 0)
   {
@@ -61,7 +61,7 @@ ClassicMovie* Inventory::peekClassicMovie(const int& index) const
   return classicMovieShelf[index];
 }
 
-ComedyMovie* Inventory::peekComedyMovie(const int& index) const
+ComedyMovie* Inventory::peekComedyMovie(int& index) const
 {
   if(index >= comedyMovieShelf.size() || index < 0)
   {
@@ -71,7 +71,7 @@ ComedyMovie* Inventory::peekComedyMovie(const int& index) const
   return comedyMovieShelf[index];
 }
 
-DramaMovie* Inventory::peekDramaMovie(const int& index) const
+DramaMovie* Inventory::peekDramaMovie(int& index) const
 {
   if(index >= dramaMovieShelf.size() || index < 0)
   {
@@ -81,7 +81,7 @@ DramaMovie* Inventory::peekDramaMovie(const int& index) const
   return dramaMovieShelf[index];
 }
 
-int Inventory::getClassicIndex(const int& month, const int& year, const string& first, const string& last)
+int Inventory::getClassicIndex(int& month, int& year, string& first, string& last)
 {
   for(int i = 0; i < classicMovieShelf.size(); i++)
   {
@@ -96,7 +96,7 @@ int Inventory::getClassicIndex(const int& month, const int& year, const string& 
   return -1;
 }
 
-int Inventory::getComedyIndex(const int& year, const string& title)
+int Inventory::getComedyIndex(int& year, string& title)
 {
   for(int i = 0; i < comedyMovieShelf.size(); i++)
   {
@@ -108,7 +108,7 @@ int Inventory::getComedyIndex(const int& year, const string& title)
   return -1;
 }
 
-int Inventory::getDramaIndex(const string& director, const string& title)
+int Inventory::getDramaIndex(string& director, string& title)
 {
   for(int i = 0; i < dramaMovieShelf.size(); i++)
   {
@@ -120,9 +120,9 @@ int Inventory::getDramaIndex(const string& director, const string& title)
   return -1;
 }
 
-bool Inventory::borrowMovie(const string& movieType, const int& index)
+bool Inventory::borrowMovie(string& movie_type, int& index)
 {
-  if(movieType == "C")
+  if(movie_type == "C")
   {
     int stockAmt = classicMovieShelf[index]->getStockAmt();
     if(stockAmt >= 1)
@@ -137,7 +137,7 @@ bool Inventory::borrowMovie(const string& movieType, const int& index)
       return false;
     }
   }
-  else if(movieType == "F")
+  else if(movie_type == "F")
   {
     int stockAmt = comedyMovieShelf[index]->getStockAmt();
     if(stockAmt >= 1)
@@ -152,7 +152,7 @@ bool Inventory::borrowMovie(const string& movieType, const int& index)
       return false;
     }
   }
-  else if(movieType == "D")
+  else if(movie_type == "D")
   {
     int stockAmt = dramaMovieShelf[index]->getStockAmt();
     if(stockAmt >= 1)
@@ -170,19 +170,19 @@ bool Inventory::borrowMovie(const string& movieType, const int& index)
   return false;
 }
 
-void Inventory::returnMovie(const string& movieType, const int& index)
+void Inventory::returnMovie(string& movie_type, int& index)
 {
-  if(movieType == "C")
+  if(movie_type == "C")
   {
     classicMovieShelf[index]->setStock(classicMovieShelf[index]->getStockAmt()+1);
     classicMovieShelf[index]->setBorrowed(classicMovieShelf[index]->getBorrowedAmt()-1);
   }
-  if(movieType == "F")
+  if(movie_type == "F")
   {
     comedyMovieShelf[index]->setStock(comedyMovieShelf[index]->getStockAmt()+1);
     comedyMovieShelf[index]->setBorrowed(comedyMovieShelf[index]->getBorrowedAmt()-1);
   }
-  if(movieType == "D")
+  if(movie_type == "D")
   {
     dramaMovieShelf[index]->setStock(dramaMovieShelf[index]->getStockAmt()+1);
     dramaMovieShelf[index]->setBorrowed(dramaMovieShelf[index]->getBorrowedAmt()-1);

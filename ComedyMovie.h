@@ -1,20 +1,19 @@
 #ifndef COMEDYMOVIE_H
 #define COMEDYMOVIE_H
 #include "Movie.h"
-#include <string>
+#include <algorithm>
+#include <cassert>
+#include <fstream>
 #include <iostream>
 #include <sstream>
-#include <fstream>
-#include <cassert>
+#include <string>
 #include <vector>
-#include <iostream>
-#include <algorithm>
 using namespace std;
 
 
 class ComedyMovie: public Movie {
   public:
-    ComedyMovie(int stock, string title, string director, int releaseYear)
+    ComedyMovie(const int& stock, const string& title, const string& director, const int& releaseYear)
     {
       this->stock = stock;
       this->title = title;
@@ -22,16 +21,6 @@ class ComedyMovie: public Movie {
       this->releaseYear = releaseYear;
       this->type = 'F';
     }
-    
-    ComedyMovie(ComedyMovie* other)
-    {
-      this->stock = other->getStockAmt();
-      this->title = other->getTitle();
-      this->director = other->getDirector();
-      this->releaseYear = other->getReleaseYear();
-      this->type = 'F';
-    }
-
     ostream &display(ostream &os) const override
     {
       os << "[" << title << "] Comedy | " << releaseYear << " | By " << director << " | " << stock << " copies available / " << borrowed << " copies currently being borrowed." << endl;

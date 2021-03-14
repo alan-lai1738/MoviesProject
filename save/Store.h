@@ -1,14 +1,10 @@
 #ifndef STORE_H
 #define STORE_H
-#include "Customer.h"
 #include "HashTable.h"
-#include "Inventory.h"
 #include "Movie.h"
-#include <fstream>
-#include <iostream>
-#include <sstream>
+#include "Customer.h"
+#include "Inventory.h"
 #include <string>
-
 using namespace std;
 
 class Store{

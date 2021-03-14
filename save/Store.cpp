@@ -1,15 +1,15 @@
  #include "Store.h"
- #include <fstream>
 #include <iostream>
-#include <sstream>
 #include <string>
+#include <fstream>
+#include <sstream>
 
 Store::Store()
 {
   inv = new Inventory();
 }
 
-void Store::fillCustomerDatabase(const string& fileName)
+void Store::fillCustomerDatabase(string& fileName)
 {
   ifstream in(fileName);
 	string line;	// Line were reading
@@ -36,7 +36,7 @@ void Store::fillCustomerDatabase(const string& fileName)
   in.close();
 }
 
-void Store::stockDVDShelves(const string& fileName)
+void Store::stockDVDShelves(string& fileName)
 {
   ifstream in(fileName);
 	string line;	// Line were reading
@@ -97,7 +97,7 @@ void Store::stockDVDShelves(const string& fileName)
   
 }
 
-void Store::readTransactions(const string& fileName)
+void Store::readTransactions(string& fileName)
 {
   ifstream in(fileName);
 	string line;	// Line were reading
@@ -113,10 +113,10 @@ void Store::readTransactions(const string& fileName)
 			break;
 		}
     istringstream parseLine(line);
-    string transType;
-    parseLine >> transType; // First letter is the Store Transaction Type
+    string trans_type;
+    parseLine >> trans_type; // First letter is the Store Transaction Type
 
-    switch(transType[0])
+    switch(trans_type[0])
     {
     case 'I':
     {
@@ -133,13 +133,13 @@ void Store::readTransactions(const string& fileName)
     case 'R':
     {
       int custID;
-      string mediaType, movieType;
+      string media_type, movie_type;
       parseLine >> custID;
-      parseLine >> mediaType;
-      if(mediaType == "D")
+      parseLine >> media_type;
+      if(media_type == "D")
       {
-        parseLine >> movieType;
-        if(movieType == "C")
+        parseLine >> movie_type;
+        if(movie_type == "C")
         {
           int month, year;
           string first, last;
@@ -161,9 +161,9 @@ void Store::readTransactions(const string& fileName)
                 //check
                 if(customerDatabase.get(custID)->isCurrentlyBorrowing('C', idx))
                 {
-                  inv->returnMovie(movieType, idx);
+                  inv->returnMovie(movie_type, idx);
                   Transaction* t = new Transaction('C', c->getTitle(), c->getDirector(), customerDatabase.get(custID)->getFirstName() + " "
-                  + customerDatabase.get(custID)->getLastName(), transType[0]);
+                  + customerDatabase.get(custID)->getLastName(), trans_type[0]);
                   customerDatabase.get(custID)->addToHistory(t);
                 }
                 else
@@ -178,7 +178,7 @@ void Store::readTransactions(const string& fileName)
               }
             }
           }
-          else if(movieType == "F")
+          else if(movie_type == "F")
           {
             //F You've Got Mail, 1998
             int year;
@@ -206,8 +206,8 @@ void Store::readTransactions(const string& fileName)
               {
                 if(customerDatabase.get(custID)->isCurrentlyBorrowing('F', idx)) // if customer is borrowing this movie, we can successfully return it
                 {
-                  inv->returnMovie(movieType, idx);
-                  Transaction* t = new Transaction('F', c->getTitle(), c->getDirector(), customerDatabase.get(custID)->getFirstName() + " " + customerDatabase.get(custID)->getLastName(), transType[0]);
+                  inv->returnMovie(movie_type, idx);
+                  Transaction* t = new Transaction('F', c->getTitle(), c->getDirector(), customerDatabase.get(custID)->getFirstName() + " " + customerDatabase.get(custID)->getLastName(), trans_type[0]);
 
                   customerDatabase.get(custID)->addToHistory(t);
                 } 
@@ -223,7 +223,7 @@ void Store::readTransactions(const string& fileName)
               }
             }
           }
-          else if(movieType == "D")
+          else if(movie_type == "D")
           {
             //D Barry Levinson, Good Morning Vietnam,
             string director, title;
@@ -250,8 +250,8 @@ void Store::readTransactions(const string& fileName)
               {
                 if(customerDatabase.get(custID)->isCurrentlyBorrowing('D', idx))
                 {
-                  inv->returnMovie(movieType, idx);
-                  Transaction* t = new Transaction('D', d->getTitle(), d->getDirector(), customerDatabase.get(custID)->getFirstName() + " " + customerDatabase.get(custID)->getLastName(), transType[0]);
+                  inv->returnMovie(movie_type, idx);
+                  Transaction* t = new Transaction('D', d->getTitle(), d->getDirector(), customerDatabase.get(custID)->getFirstName() + " " + customerDatabase.get(custID)->getLastName(), trans_type[0]);
 
                   customerDatabase.get(custID)->addToHistory(t);
                 }
@@ -269,25 +269,25 @@ void Store::readTransactions(const string& fileName)
         }
         else
         {
-          cerr << "ERROR: Invalid Movie Type: " << movieType << endl;
+          cerr << "ERROR: Invalid Movie Type: " << movie_type << endl;
         }  
       }// if media type is d
       else
       {
-        cerr << "ERROR: Invalid Media Type:" << mediaType << endl;
+        cerr << "ERROR: Invalid Media Type:" << media_type << endl;
       }  
       break;
     }
     case 'B':
     {
       int custID;
-      string movieType, mediaType;
+      string movie_type, media_type;
       parseLine >> custID;
-      parseLine >> mediaType;
-      if(mediaType == "D")
+      parseLine >> media_type;
+      if(media_type == "D")
       {
-        parseLine >> movieType;
-        if(movieType == "C")
+        parseLine >> movie_type;
+        if(movie_type == "C")
         {
           int month, year;
           string first, last;
@@ -305,10 +305,10 @@ void Store::readTransactions(const string& fileName)
           {
             if(customerDatabase.contains(custID))
             {
-              if(inv->borrowMovie(movieType, idx))
+              if(inv->borrowMovie(movie_type, idx))
               {
                 ClassicMovie* c = inv->peekClassicMovie(idx);
-                Transaction* t = new Transaction('C', c->getTitle(), c->getDirector(),customerDatabase.get(custID)->getFirstName() + " " + customerDatabase.get(custID)->getLastName(), transType[0]);
+                Transaction* t = new Transaction('C', c->getTitle(), c->getDirector(),customerDatabase.get(custID)->getFirstName() + " " + customerDatabase.get(custID)->getLastName(), trans_type[0]);
                 customerDatabase.get(custID)->addBorrowed('C', idx);
                 customerDatabase.get(custID)->addToHistory(t);
               }
@@ -319,7 +319,7 @@ void Store::readTransactions(const string& fileName)
             }
           }
         }
-        else if(movieType == "F")
+        else if(movie_type == "F")
         {
           //F You've Got Mail, 1998
           int year;
@@ -344,10 +344,10 @@ void Store::readTransactions(const string& fileName)
           {
             if(customerDatabase.contains(custID))
             {
-              if(inv->borrowMovie(movieType, idx))
+              if(inv->borrowMovie(movie_type, idx))
               {
                 ComedyMovie* c = inv->peekComedyMovie(idx);
-                Transaction* t = new Transaction('C', c->getTitle(), c->getDirector(), customerDatabase.get(custID)->getFirstName() + " " + customerDatabase.get(custID)->getLastName(), transType[0]);
+                Transaction* t = new Transaction('C', c->getTitle(), c->getDirector(), customerDatabase.get(custID)->getFirstName() + " " + customerDatabase.get(custID)->getLastName(), trans_type[0]);
                 customerDatabase.get(custID)->addBorrowed('F', idx);
                 customerDatabase.get(custID)->addToHistory(t);
               }
@@ -358,7 +358,7 @@ void Store::readTransactions(const string& fileName)
             }
           }
         }
-        else if(movieType == "D")
+        else if(movie_type == "D")
         {
           //D Barry Levinson, Good Morning Vietnam,
           string director, title;
@@ -382,10 +382,10 @@ void Store::readTransactions(const string& fileName)
           {
             if(customerDatabase.contains(custID))
             {
-              if(inv->borrowMovie(movieType, idx))
+              if(inv->borrowMovie(movie_type, idx))
               {
                 DramaMovie* c = inv->peekDramaMovie(idx);
-                Transaction* t = new Transaction('C', c->getTitle(), c->getDirector(), customerDatabase.get(custID)->getFirstName() + " " + customerDatabase.get(custID)->getLastName(), transType[0]);
+                Transaction* t = new Transaction('C', c->getTitle(), c->getDirector(), customerDatabase.get(custID)->getFirstName() + " " + customerDatabase.get(custID)->getLastName(), trans_type[0]);
                 customerDatabase.get(custID)->addBorrowed('D', idx);
                 customerDatabase.get(custID)->addToHistory(t);
               }
@@ -398,17 +398,17 @@ void Store::readTransactions(const string& fileName)
         }
         else
         {
-          cerr << "ERROR: Invalid Movie Type: " << movieType << endl;
+          cerr << "ERROR: Invalid Movie Type: " << movie_type << endl;
         }
       }
       else
       {
-        cerr << "ERROR: Invalid Media Type:" << mediaType << endl;
+        cerr << "ERROR: Invalid Media Type:" << media_type << endl;
       }
      break;
     }
     default: 
-      cerr << transType << " is an invalid transaction type." << endl;
+      cerr << trans_type << " is an invalid transaction type." << endl;
       break;
     }
     inv->sortMovies();

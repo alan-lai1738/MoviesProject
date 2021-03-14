@@ -14,9 +14,6 @@ Transaction::Transaction(const char& movType, const string& movTitle, const stri
     case 'D' :
       movieType = "Drama";
       break;
-    default:
-      cerr << "ERROR: Invalid Movie Type: " << movieType << endl;
-      break;
   }
   movieTitle = movTitle;
   director = dirName;
