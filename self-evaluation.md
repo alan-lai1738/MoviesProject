@@ -7,7 +7,7 @@ Out of 25 points. Use output.txt created using
 
 Complete all questions with "Q:"
 
-Q: Does the program compile and run to completion: Yes/No
+Q: Does the program compile and run to completion: Yes
 
 - If the program does not compile or gives a segmentation error when run, 
 the maximum possible grade is 50%. No need to continue with the rest of self-evaluation

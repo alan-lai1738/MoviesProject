@@ -11,124 +11,83 @@
 
 using namespace std;
 
+class ClassicMovie : public Movie {
+public:
+  // Default constructor
+  ClassicMovie(const int &stock, const string &title, const string &director,
+               const string &majActorFirstName, const string &majActorLastName,
+               const int &relMonth, const int &relYear): Movie(stock, title, director, relYear) {
+    this->majorActorFirst = majActorFirstName;
+    this->majorActorLast = majActorLastName;
+    this->releaseMonth = relMonth;
+    this->type = 'C';
+  }
 
-class ClassicMovie: public Movie {
-  public:
-    // Default constructor
-    ClassicMovie(const int& stock, const string& title, const string& director, const string& majActorFirstName, const string& majActorLastName, const int& relMonth, const int& relYear)
-    {
-      this->stock =  stock;
-      this->title =  title;
-      this->director = director;
-      this->releaseYear = relYear;
-      this->majorActorFirst = majActorFirstName;
-      this->majorActorLast = majActorLastName;
-      this->releaseMonth = relMonth;
-      this->type = 'C';
-    }
-    // copy constructor
-    ClassicMovie(ClassicMovie* other)
-    {
-      this->stock = other->getStockAmt();
-      this->title = other->getTitle();
-      this->director = other->getDirector();
-      this->releaseMonth = other->getReleaseMonth();
-      this->releaseYear = other->getReleaseYear();
-      this->majorActorFirst = other->getMajorActorFirst();
-      this->majorActorLast = other->getMajorActorLast();
-      this->type = 'C';
-    }
-    //Getters
-    int getReleaseMonth() const
-    {
-      return releaseMonth;
-    }
-    string getMajorActorFirst() const
-    {
-      return majorActorFirst;
-    }
-    string getMajorActorLast() const
-    {
-      return majorActorLast;
-    }
+  // copy constructor
+  explicit ClassicMovie(ClassicMovie *other) : Movie(other->getStockAmt(), other->getTitle(), other->getDirector(), other->getReleaseYear()){
+    this->releaseMonth = other->getReleaseMonth();
+    this->majorActorFirst = other->getMajorActorFirst();
+    this->majorActorLast = other->getMajorActorLast();
+    this->type = 'C';
+  }
+  // Getters
+  int getReleaseMonth() const { return releaseMonth; }
+  string getMajorActorFirst() const { return majorActorFirst; }
+  string getMajorActorLast() const { return majorActorLast; }
 
-    ostream &display(ostream &os) const override
-    {
-      os << "[" << title << "] Classic | " << releaseMonth << "/" << releaseYear << " | By " << director << " | " << "Featuring " << majorActorFirst << " " << majorActorLast
-      << " | " << stock << " copies available / " << borrowed << " copies currently being borrowed." << endl;
-      return os;
-    }
-    
-    bool equals(Movie* other) const override
-    {
-      assert(other != nullptr);
-      ClassicMovie* otherMovie = dynamic_cast<ClassicMovie*>(other);
-      //assert(otherMovie && otherMovie == other);
-      return(
-      title == otherMovie->title &&
-      director == otherMovie->director &&
-      releaseMonth == otherMovie->releaseMonth &&
-      releaseYear == otherMovie->releaseYear &&
-      majorActorFirst == otherMovie->majorActorFirst &&
-      majorActorLast == otherMovie->majorActorLast
-      );
-    }
+  ostream &display(ostream &os) const override {
+    os << "[" << title << "] Classic | " << releaseMonth << "/" << releaseYear
+       << " | By " << director << " | "
+       << "Featuring " << majorActorFirst << " " << majorActorLast << " | "
+       << stock << " copies available / " << borrowed
+       << " copies currently being borrowed." << endl;
+    return os;
+  }
 
+  bool equals(Movie *other) const override {
+    assert(other != nullptr);
+    auto otherMovie = dynamic_cast<ClassicMovie *>(other);
+    // assert(otherMovie && otherMovie == other);
+    return (title == otherMovie->title && director == otherMovie->director &&
+            releaseMonth == otherMovie->releaseMonth &&
+            releaseYear == otherMovie->releaseYear &&
+            majorActorFirst == otherMovie->majorActorFirst &&
+            majorActorLast == otherMovie->majorActorLast);
+  }
 
-    bool greaterThan(Movie* other) const override
-    {
-      if(equals(other))
-      {
-        return false;
-      }
-      return (!lessThan(other));
-    }
-
-    
-    bool lessThan(Movie* other) const override
-    {
-      assert(other != nullptr);
-      ClassicMovie  m = dynamic_cast<ClassicMovie*>(other);
-      if(equals(other))
-      {
-        return false;
-      }
-      if(m.getReleaseYear() > releaseYear)
-      {
-        return true;
-      }
-      if(m.getReleaseYear() == releaseYear)
-      {
-        if(m.getReleaseMonth() > releaseMonth)
-        {
-          return true;
-        }
-        else if(m.getReleaseMonth() == releaseMonth)
-        {
-          if(m.getMajorActorFirst() > majorActorFirst)
-          {
-            return true;
-          }
-          else if(m.getMajorActorFirst() == majorActorFirst)
-          {
-            if(m.getMajorActorLast() > majorActorLast)
-            {
-              return true;
-            }
-            else
-            {
-              return false;
-            }
-          }
-        }
-      }
+  bool greaterThan(Movie *other) const override {
+    if (equals(other)) {
       return false;
     }
-  
-  private:
-    string majorActorFirst;
-    string majorActorLast;
-    int releaseMonth;
-    
+    return (!lessThan(other));
+  }
+
+  bool lessThan(Movie *other) const override {
+    assert(other != nullptr);
+    auto rhs = dynamic_cast<ClassicMovie *>(other);
+    if (equals(other)) {
+      return false;
+    }
+    if (releaseYear != rhs->getReleaseYear()) {
+      return releaseYear < rhs->getReleaseYear();
+    }
+    if (releaseMonth != rhs->getReleaseMonth()) {
+      return releaseMonth < rhs->getReleaseMonth();
+    }
+    if (releaseMonth != rhs->getReleaseMonth()) {
+      return releaseMonth < rhs->getReleaseMonth();
+    }
+    string actorName = majorActorFirst + " " + majorActorLast;
+    string actorNameRHS = rhs->getMajorActorFirst() + " " + rhs->getMajorActorLast();
+    if (actorName != actorNameRHS) {
+      return actorName < actorNameRHS;
+    }
+    return false;
+  }
+
+private:
+  string majorActorFirst;
+  string majorActorLast;
+  int releaseMonth;
 };
 #endif
