@@ -1,0 +1,74 @@
+void Bank::ReadTransactions(string fileName)
+{
+	ifstream in(fileName);
+	string line;	// Line were reading
+	if (!in)
+	{
+		cout << "Can't open file" << endl;
+	}
+
+	while (!in.eof())
+	{
+		vector<string> trans_parameters;
+		getline(in, line);
+		if (line.empty())
+		{
+			break;
+		}
+		istringstream parseLine(line);
+		string trans_type;	// Transaction Type
+		parseLine >> trans_type;	// First letter is the transaction type.
+
+		if (trans_type == "O")
+		{
+			string first_name, last_name, account_id;
+			parseLine >> first_name >> last_name >> account_id;
+			trans_parameters.push_back(trans_type);
+			trans_parameters.push_back(first_name);
+			trans_parameters.push_back(last_name);
+			trans_parameters.push_back(account_id);
+			
+		}
+		else if (trans_type == "W" || trans_type == "D")
+		{
+			int account_id, fund_id, amount;
+			parseLine >> account_id >> amount;
+			fund_id = account_id % 10;	// The fund ID is the last digit of a 5 digit input
+			account_id = account_id / 10;	// The Account ID is the first 4 digits, cut the 5th one off
+			trans_parameters.push_back(trans_type);	// Push values into a vector to process later
+			trans_parameters.push_back(to_string(account_id));
+			trans_parameters.push_back(to_string(fund_id));
+			trans_parameters.push_back(to_string(amount));
+			
+		}
+		else if (trans_type == "T")
+		{
+			int account_id, fund_id, amount, destination_id, destination_fund;
+			parseLine >> account_id >> amount >> destination_id;
+			fund_id = account_id % 10;
+			account_id = account_id / 10;
+			destination_fund = destination_id % 10;
+			destination_id = destination_id / 10;
+			trans_parameters.push_back(trans_type);
+			trans_parameters.push_back(to_string(account_id));
+			trans_parameters.push_back(to_string(fund_id));
+			trans_parameters.push_back(to_string(amount));
+			trans_parameters.push_back(to_string(destination_id));
+			trans_parameters.push_back(to_string(destination_fund));
+			
+		}
+		else if (trans_type == "H")
+		{
+			int account_id;
+			parseLine >> account_id;
+			trans_parameters.push_back(trans_type);
+			trans_parameters.push_back(to_string(account_id));
+		}
+		else
+		{
+			cerr << "---------------------------------------------------------------------------------------" << endl;
+			cerr << "ERROR: Invalid input/type of transaction!" << endl;
+		}
+		transaction_queue_.push(trans_parameters);	// Insert into the Transaction Queue
+	}
+}
