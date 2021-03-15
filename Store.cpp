@@ -23,15 +23,12 @@ void Store::fillCustomerDatabase(const string &fileName) {
     istringstream parseLine(line); // get contents (string) of line
     int custID;                    // customer id
     parseLine >> custID;           // assign custID value
-    if(custID > 999 && custID < 10000 && !customerDatabase.contains(custID))
-    {
-      string first, last;            // customer first and last names
-      parseLine >> first >> last;    // assign first and last values
+    if (custID > 999 && custID < 10000 && !customerDatabase.contains(custID)) {
+      string first, last;         // customer first and last names
+      parseLine >> first >> last; // assign first and last values
       Customer *c = new Customer(first, last, custID); // creaate new customer
-      customerDatabase.put(custID, c);                 // add customer to database
-    }
-    else
-    {
+      customerDatabase.put(custID, c); // add customer to database
+    } else {
       cerr << "ERROR: Invalid Customer Id: " << custID << endl;
     }
   }

@@ -131,47 +131,10 @@ void testFinal() {
   cout << "testFinal() tests ran" << endl;
 }
 
-void testMovies()
-{
-  cout << "Running movie tests" << endl;
-  ClassicMovie c(5, "ClassicMovie Title", "Rin Shima", "Rin", "Shima", 5, 2000);
-  assert(c.getStockAmt() == 5);
-  assert(c.getDirector() == "Rin Shima");
-  assert(c.getMajorActorFirst() == "Rin");
-  assert(c.getMajorActorFirst() == "Shima");
-  ClassicMovie c2(15, "Another Classic", "Rin Shima", "Rin", "Shima", 5, 1995);
-  assert(c.greaterThan(c2) == true);
-  assert(c.lessThan(c2) == true);
-  
-
-}
-
-void testHashmap()
-{
-
-}
-
-void testCustomerAndTransactions()
-{
-
-}
-
-void testStoreAndInventory()
-{
-
-}
-
 void testAll() {
-<<<<<<< HEAD
   testMovies();
   testHashTable();
   testCustomer();
   // testStoreAndInventory();
   testFinal();
-=======
-  testStore1();
-  testStore2();
-  testStoreFinal();
-  testMovies();
->>>>>>> a186ca44c799725e15bacf34b09fda7a0163f877
 }

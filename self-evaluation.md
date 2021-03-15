@@ -66,33 +66,34 @@ invalid movie type: Store.cpp under stockDVDShelves (line 94) and readTransactio
 
 invalid customer ID: Store.cpp under fillCustomerDatabase
  
-invalid movie: TODO(student)
+invalid movie: Store.cpp under readTransactions (line 146, 193, 242)
 
-factory classes: TODO(student)
+factory classes: N/A
 
-hashtable: TODO(student) (explain what the hashtable is used for)
+hashtable: HashTable.h, used to store customers. (explain what the hashtable is used for)
 
-container used for comedy movies: TODO(student)
+container used for comedy movies: Inventory.h, vector<ComedyMovie *> comedyMovieShelf (line 78)
 
-function for sorting comedy movies: TODO(student)
+function for sorting comedy movies: Inventory.h, sortByComedy(ComedyMovie *a, ComedyMovie *b) (line 83)
 
-function where comedy movies are sorted: TODO(student)
+function where comedy movies are sorted: Inventory.h, sortMovies() (line 73)
 
-functions called when retrieving a comedy movie based on title and year: TODO(student)
+functions called when retrieving a comedy movie based on title and year: getComedyIndex() (line 97) in Inventory.cpp, which can be used for peekComedyMovie() (line 66)
 
-functions called for retrieving and printing customer history: TODO(student)
+functions called for retrieving and printing customer history: printHistory() in line 25 of Customer.cpp
 
-container used for customer history: TODO(student)
+container used for customer history: vector<pair<char, int>> borrowedMovies; in line 60 of Customer.h
 
-functions called when borrowing a movie: TODO(student)
+functions called when borrowing a movie: borrowMovie() in Inventory.cpp, line 118.
+Calls movie's getters and setters for stock/borrowed amounts.
 
-explain borrowing a movie that does not exist: TODO(student)
+explain borrowing a movie that does not exist: Store.cpp, readTransaction() line 299, 332, 366
 
-explain borrowing a movie that has 0 stock: TODO(student)
+explain borrowing a movie that has 0 stock: borrowMovie() in Inventory.cpp line 129, 144, 158
 
-explain returning a movie that customer has not checked out: TODO(student)
+explain returning a movie that customer has not checked out: Store.cpp, readTransactions line 164, 213, 242
 
-any static_cast or dynamic_cast used: TODO(student)
+any static_cast or dynamic_cast used: ClassicMovie.h equals() line 61, lessThan line 80
 
 
-Q: Total points: ADD_ALL_POINTS (max 25)
+Q: Total points: 25/25 (max 25)
