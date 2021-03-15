@@ -1,4 +1,4 @@
-Sun Mar 14 15:11:51 PDT 2021
+Sun Mar 14 17:28:09 PDT 2021
 Linux csslab9.uwb.edu 3.10.0-1160.11.1.el7.x86_64 #1 SMP Fri Dec 18 16:34:56 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 uid=930027(schau623) gid=2120930027(schau623) groups=2120930027(schau623),605559(lab-access)
 =====================================================
@@ -7,14 +7,124 @@ uid=930027(schau623) gid=2120930027(schau623) groups=2120930027(schau623),605559
 =====================================================
 2. Runs and produces correct output
 =====================================================
-Start testStore1
-End testStore1
-Start testStore2
-End testStore2
-=====================================
-Start testStoreFinal
-End testStoreFinal
-=====================================
+Running movie tests
+Movie tests passed
+Running HashTable tests
+HashTable tests passed
+Running customer tests
+Customer tests passed
+ERROR: Invalid Movie Type: Z
+ERROR: Invalid Movie Type: Z
+____________________[Viewing Inventory]____________________
+[Annie Hall] Comedy | 1977 | By Woody Allen | 10 copies available / 0 copies currently being borrowed.
+[Fargo] Comedy | 1996 | By Joel Coen | 10 copies available / 0 copies currently being borrowed.
+[National Lampoon's Animal House] Comedy | 1978 | By John Landis | 10 copies available / 0 copies currently being borrowed.
+[Pirates of the Caribbean] Comedy | 2000 | By Different Years | 10 copies available / 0 copies currently being borrowed.
+[Pirates of the Caribbean] Comedy | 2003 | By Gore Verbinski | 10 copies available / 0 copies currently being borrowed.
+[Sleepless in Seattle] Comedy | 1993 | By Nora Ephron | 10 copies available / 0 copies currently being borrowed.
+[When Harry Met Sally] Comedy | 1989 | By Rob Reiner | 10 copies available / 0 copies currently being borrowed.
+[You've Got Mail] Comedy | 1998 | By Nora Ephron | 10 copies available / 0 copies currently being borrowed.
+[Good Morning Vietnam] Drama | 1988 | By Barry Levinson | 10 copies available / 0 copies currently being borrowed.
+[Same Director Good Morning Vietnam] Drama | 1988 | By Barry Levinson | 10 copies available / 0 copies currently being borrowed.
+[Unforgiven] Drama | 1992 | By Clint Eastwood | 10 copies available / 0 copies currently being borrowed.
+[Good Will Hunting] Drama | 2000 | By Gus Van Sant | 10 copies available / 0 copies currently being borrowed.
+[Silence of the Lambs] Drama | 1991 | By Jonathan Demme | 10 copies available / 0 copies currently being borrowed.
+[Dogfight] Drama | 1991 | By Nancy Savoca | 10 copies available / 0 copies currently being borrowed.
+[King of Hearts] Drama | 1967 | By Phillippe De Broca | 10 copies available / 0 copies currently being borrowed.
+[Schindler's List] Drama | 1993 | By Steven Spielberg | 10 copies available / 0 copies currently being borrowed.
+[Holiday] Classic | 9/1938 | By George Cukor | Featuring Cary Grant | 10 copies available / 0 copies currently being borrowed.
+[Holiday] Classic | 9/1938 | By George Cukor | Featuring Katherine Hepburn | 10 copies available / 0 copies currently being borrowed.
+[Gone With the Wind] Classic | 2/1939 | By Victor Fleming | Featuring Clark Gable | 10 copies available / 0 copies currently being borrowed.
+[Gone With the Wind] Classic | 2/1939 | By Victor Fleming | Featuring Vivien Leigh | 10 copies available / 0 copies currently being borrowed.
+[The Wizard of Oz] Classic | 7/1939 | By Victor Fleming | Featuring Judy Garland | 10 copies available / 0 copies currently being borrowed.
+[The Philadelphia Story] Classic | 5/1940 | By George Cukor | Featuring Cary Grant | 10 copies available / 0 copies currently being borrowed.
+[The Philadelphia Story] Classic | 5/1940 | By George Cukor | Featuring Katherine Hepburn | 10 copies available / 0 copies currently being borrowed.
+[The Maltese Falcon] Classic | 10/1941 | By John Huston | Featuring Humphrey Bogart | 10 copies available / 0 copies currently being borrowed.
+[Casablanca] Classic | 8/1942 | By Michael Curtiz | Featuring Humphrey Bogart | 10 copies available / 0 copies currently being borrowed.
+[Casablanca] Classic | 8/1942 | By Michael Curtiz | Featuring Ingrid Bergman | 10 copies available / 0 copies currently being borrowed.
+[It's a Wonderful Life] Classic | 11/1946 | By Frank Capra | Featuring Donna Reed | 10 copies available / 0 copies currently being borrowed.
+[It's a Wonderful Life] Classic | 11/1946 | By Frank Capra | Featuring James Steward | 10 copies available / 0 copies currently being borrowed.
+[A Clockwork Orange] Classic | 2/1971 | By Stanley Kubrick | Featuring Malcolm McDowell | 10 copies available / 0 copies currently being borrowed.
+[Harold and Maude] Classic | 3/1971 | By Hal Ashby | Featuring Ruth Gordon | 10 copies available / 0 copies currently being borrowed.
+____________________[Displaying Mouse Minnie's History]____________________
+History is Empty!
+____________________[Displaying Frog Freddie's History]____________________
+History is Empty!
+____________________[Displaying Wacky Wally's History]____________________
+History is Empty!
+ERROR: Invalid Movie Type: Z
+X is an invalid transaction type.
+Z is an invalid transaction type.
+ERROR: Invalid Customer ID: 1234
+ERROR: Comedy Movie: Bogus Title, 2001 Not Found!
+ERROR: Invalid Media Type:Z
+ERROR: Insufficient stock of Harold and Maude, 3 1971
+ERROR: Insufficient stock of Harold and Maude, 3 1971
+ERROR: Insufficient stock of Harold and Maude, 3 1971
+ERROR: Drama Movie: Bogus Title by Steven Spielberg Not Found!
+____________________[Viewing Inventory]____________________
+[Annie Hall] Comedy | 1977 | By Woody Allen | 9 copies available / 1 copies currently being borrowed.
+[Fargo] Comedy | 1996 | By Joel Coen | 9 copies available / 1 copies currently being borrowed.
+[National Lampoon's Animal House] Comedy | 1978 | By John Landis | 9 copies available / 1 copies currently being borrowed.
+[Pirates of the Caribbean] Comedy | 2000 | By Different Years | 10 copies available / 0 copies currently being borrowed.
+[Pirates of the Caribbean] Comedy | 2003 | By Gore Verbinski | 10 copies available / 0 copies currently being borrowed.
+[Sleepless in Seattle] Comedy | 1993 | By Nora Ephron | 9 copies available / 1 copies currently being borrowed.
+[When Harry Met Sally] Comedy | 1989 | By Rob Reiner | 9 copies available / 1 copies currently being borrowed.
+[You've Got Mail] Comedy | 1998 | By Nora Ephron | 9 copies available / 1 copies currently being borrowed.
+[Good Morning Vietnam] Drama | 1988 | By Barry Levinson | 9 copies available / 1 copies currently being borrowed.
+[Same Director Good Morning Vietnam] Drama | 1988 | By Barry Levinson | 10 copies available / 0 copies currently being borrowed.
+[Unforgiven] Drama | 1992 | By Clint Eastwood | 9 copies available / 1 copies currently being borrowed.
+[Good Will Hunting] Drama | 2000 | By Gus Van Sant | 9 copies available / 1 copies currently being borrowed.
+[Silence of the Lambs] Drama | 1991 | By Jonathan Demme | 9 copies available / 1 copies currently being borrowed.
+[Dogfight] Drama | 1991 | By Nancy Savoca | 8 copies available / 2 copies currently being borrowed.
+[King of Hearts] Drama | 1967 | By Phillippe De Broca | 9 copies available / 1 copies currently being borrowed.
+[Schindler's List] Drama | 1993 | By Steven Spielberg | 9 copies available / 1 copies currently being borrowed.
+[Holiday] Classic | 9/1938 | By George Cukor | Featuring Cary Grant | 9 copies available / 1 copies currently being borrowed.
+[Holiday] Classic | 9/1938 | By George Cukor | Featuring Katherine Hepburn | 10 copies available / 0 copies currently being borrowed.
+[Gone With the Wind] Classic | 2/1939 | By Victor Fleming | Featuring Clark Gable | 10 copies available / 0 copies currently being borrowed.
+[Gone With the Wind] Classic | 2/1939 | By Victor Fleming | Featuring Vivien Leigh | 10 copies available / 0 copies currently being borrowed.
+[The Wizard of Oz] Classic | 7/1939 | By Victor Fleming | Featuring Judy Garland | 10 copies available / 0 copies currently being borrowed.
+[The Philadelphia Story] Classic | 5/1940 | By George Cukor | Featuring Cary Grant | 9 copies available / 1 copies currently being borrowed.
+[The Philadelphia Story] Classic | 5/1940 | By George Cukor | Featuring Katherine Hepburn | 9 copies available / 1 copies currently being borrowed.
+[The Maltese Falcon] Classic | 10/1941 | By John Huston | Featuring Humphrey Bogart | 9 copies available / 1 copies currently being borrowed.
+[Casablanca] Classic | 8/1942 | By Michael Curtiz | Featuring Humphrey Bogart | 10 copies available / 0 copies currently being borrowed.
+[Casablanca] Classic | 8/1942 | By Michael Curtiz | Featuring Ingrid Bergman | 10 copies available / 0 copies currently being borrowed.
+[It's a Wonderful Life] Classic | 11/1946 | By Frank Capra | Featuring Donna Reed | 10 copies available / 0 copies currently being borrowed.
+[It's a Wonderful Life] Classic | 11/1946 | By Frank Capra | Featuring James Steward | 10 copies available / 0 copies currently being borrowed.
+[A Clockwork Orange] Classic | 2/1971 | By Stanley Kubrick | Featuring Malcolm McDowell | 9 copies available / 1 copies currently being borrowed.
+[Harold and Maude] Classic | 3/1971 | By Hal Ashby | Featuring Ruth Gordon | 0 copies available / 10 copies currently being borrowed.
+____________________[Displaying Mouse Minnie's History]____________________
+Mouse Minnie borrowed 'Harold and Maude' which is a Classic movie by Hal Ashby
+Mouse Minnie borrowed 'The Philadelphia Story' which is a Classic movie by George Cukor
+Mouse Minnie borrowed 'Good Will Hunting' which is a Drama movie by Gus Van Sant
+Mouse Minnie borrowed 'The Philadelphia Story' which is a Classic movie by George Cukor
+Mouse Minnie borrowed 'Good Morning Vietnam' which is a Drama movie by Barry Levinson
+____________________[Displaying Mouse Mickey's History]____________________
+Mouse Mickey borrowed 'Holiday' which is a Classic movie by George Cukor
+Mouse Mickey borrowed 'The Maltese Falcon' which is a Classic movie by John Huston
+Mouse Mickey borrowed 'Harold and Maude' which is a Classic movie by Hal Ashby
+Mouse Mickey borrowed 'A Clockwork Orange' which is a Classic movie by Stanley Kubrick
+____________________[Displaying Frog Freddie's History]____________________
+Frog Freddie borrowed 'Harold and Maude' which is a Classic movie by Hal Ashby
+Frog Freddie returned 'Harold and Maude' which is a Classic movie by Hal Ashby
+Frog Freddie borrowed 'Harold and Maude' which is a Classic movie by Hal Ashby
+Frog Freddie returned 'Harold and Maude' which is a Classic movie by Hal Ashby
+Frog Freddie borrowed 'Harold and Maude' which is a Classic movie by Hal Ashby
+Frog Freddie returned 'Harold and Maude' which is a Classic movie by Hal Ashby
+Frog Freddie borrowed 'Harold and Maude' which is a Classic movie by Hal Ashby
+____________________[Displaying Wacky Wally's History]____________________
+Wacky Wally borrowed 'National Lampoon's Animal House' which is a Comedy movie by John Landis
+Wacky Wally borrowed 'Harold and Maude' which is a Classic movie by Hal Ashby
+Wacky Wally borrowed 'Harold and Maude' which is a Classic movie by Hal Ashby
+Wacky Wally returned 'You've Got Mail' which is a Comedy movie by Nora Ephron
+Wacky Wally borrowed 'You've Got Mail' which is a Comedy movie by Nora Ephron
+____________________[Displaying Pig Porky's History]____________________
+Pig Porky borrowed 'Harold and Maude' which is a Classic movie by Hal Ashby
+Pig Porky borrowed 'Dogfight' which is a Drama movie by Nancy Savoca
+Pig Porky borrowed 'Silence of the Lambs' which is a Drama movie by Jonathan Demme
+Pig Porky borrowed 'When Harry Met Sally' which is a Comedy movie by Rob Reiner
+Pig Porky borrowed 'Annie Hall' which is a Comedy movie by Woody Allen
+testFinal() tests ran
 Done.
 =====================================================
 3. clang-tidy warnings are fixed
@@ -23,9 +133,9 @@ Done.
 31429 warnings generated.
 47852 warnings generated.
 64814 warnings generated.
-78816 warnings generated.
-90791 warnings generated.
-Suppressed 90791 warnings (90791 in non-user code).
+83182 warnings generated.
+95157 warnings generated.
+Suppressed 95157 warnings (95157 in non-user code).
 Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
 =====================================================
 4. clang-format does not find any formatting issues
@@ -34,6 +144,23 @@ Running clang-format on ./Customer.cpp
 Running clang-format on ./Inventory.cpp
 Running clang-format on ./main.cpp
 Running clang-format on ./Store.cpp
+26,29c26,28
+<     if(custID > 999 && custID < 10000 && !customerDatabase.contains(custID))
+<     {
+<       string first, last;            // customer first and last names
+<       parseLine >> first >> last;    // assign first and last values
+---
+>     if (custID > 999 && custID < 10000 && !customerDatabase.contains(custID)) {
+>       string first, last;         // customer first and last names
+>       parseLine >> first >> last; // assign first and last values
+31,34c30,31
+<       customerDatabase.put(custID, c);                 // add customer to database
+<     }
+<     else
+<     {
+---
+>       customerDatabase.put(custID, c); // add customer to database
+>     } else {
 Running clang-format on ./store_test.cpp
 Running clang-format on ./Transaction.cpp
 =====================================================
@@ -42,59 +169,65 @@ Running clang-format on ./Transaction.cpp
 =====================================================
 6. No memory leaks using valgrind, look for "definitely lost" 
 =====================================================
-==5325== Memcheck, a memory error detector
-==5325== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==5325== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==5325== Command: ./a.out
-==5325== Parent PID: 4702
-==5325== 
-==5325== 
-==5325== HEAP SUMMARY:
-==5325==     in use at exit: 0 bytes in 0 blocks
-==5325==   total heap usage: 5 allocs, 5 frees, 81,515 bytes allocated
-==5325== 
-==5325== All heap blocks were freed -- no leaks are possible
-==5325== 
-==5325== For lists of detected and suppressed errors, rerun with: -s
-==5325== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1737== Memcheck, a memory error detector
+==1737== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1737== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1737== Command: ./a.out
+==1737== Parent PID: 1174
+==1737== 
+==1737== 
+==1737== HEAP SUMMARY:
+==1737==     in use at exit: 14,511 bytes in 162 blocks
+==1737==   total heap usage: 2,851 allocs, 2,689 frees, 191,594 bytes allocated
+==1737== 
+==1737== LEAK SUMMARY:
+==1737==    definitely lost: 1,632 bytes in 14 blocks
+==1737==    indirectly lost: 12,879 bytes in 148 blocks
+==1737==      possibly lost: 0 bytes in 0 blocks
+==1737==    still reachable: 0 bytes in 0 blocks
+==1737==         suppressed: 0 bytes in 0 blocks
+==1737== Rerun with --leak-check=full to see details of leaked memory
+==1737== 
+==1737== For lists of detected and suppressed errors, rerun with: -s
+==1737== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 =====================================================
 7. Tests have full code coverage
 =====================================================
 File '/home/NETID/schau623/2021wi343b-movie-schau623/Customer.cpp':
 Name                                                Regions    Miss   Cover     Lines    Miss   Cover
 -----------------------------------------------------------------------------------------------------
-Customer::Customer(std::string, std::string, int)         1       1   0.00%         5       5   0.00%
-Customer::addToHistory(Transaction*)                      1       1   0.00%         1       1   0.00%
-Customer::getFirstName() const                            1       1   0.00%         1       1   0.00%
-Customer::getLastName() const                             1       1   0.00%         1       1   0.00%
-Customer::getCustomerID() const                           1       1   0.00%         1       1   0.00%
-Customer::printHistory()                                  7       7   0.00%        12      12   0.00%
-Customer::addBorrowed(char, int)                          1       1   0.00%         3       3   0.00%
-Customer::returnADVD(char, int)                           8       8   0.00%         9       9   0.00%
-Customer::isCurrentlyBorrowing(char, int)                 1       1   0.00%         4       4   0.00%
+Customer::Customer(std::string, std::string, int)         1       0 100.00%         5       0 100.00%
+Customer::addToHistory(Transaction*)                      1       0 100.00%         1       0 100.00%
+Customer::getFirstName() const                            1       0 100.00%         1       0 100.00%
+Customer::getLastName() const                             1       0 100.00%         1       0 100.00%
+Customer::getCustomerID() const                           1       0 100.00%         1       0 100.00%
+Customer::printHistory()                                  7       0 100.00%        12       0 100.00%
+Customer::addBorrowed(char, int)                          1       0 100.00%         3       0 100.00%
+Customer::returnADVD(char, int)                           8       1  87.50%         9       0 100.00%
+Customer::isCurrentlyBorrowing(char, int)                 1       0 100.00%         4       0 100.00%
 -----------------------------------------------------------------------------------------------------
-TOTAL                                                    22      22   0.00%        37      37   0.00%
+TOTAL                                                    22       1  95.45%        37       0 100.00%
 
 File '/home/NETID/schau623/2021wi343b-movie-schau623/Inventory.cpp':
 Name                                                                                                                                             Regions    Miss   Cover     Lines    Miss   Cover
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Inventory::addDramaMovie(int const&, std::string const&, std::string const&, int const&)                                                               5       5   0.00%        10      10   0.00%
-Inventory::addComedyMovie(int const&, std::string const&, std::string const&, int const&)                                                              5       5   0.00%        10      10   0.00%
-Inventory::addClassicMovie(int const&, std::string const&, std::string const&, std::string const&, std::string const&, int const&, int const&)         5       5   0.00%        11      11   0.00%
-Inventory::peekClassicMovie(int const&) const                                                                                                          6       6   0.00%         7       7   0.00%
-Inventory::peekComedyMovie(int const&) const                                                                                                           6       6   0.00%         7       7   0.00%
-Inventory::peekDramaMovie(int const&) const                                                                                                            6       6   0.00%         7       7   0.00%
-Inventory::getClassicIndex(int const&, int const&, std::string const&, std::string const&)                                                            13      13   0.00%        11      11   0.00%
-Inventory::getComedyIndex(int const&, std::string const&)                                                                                              9       9   0.00%         9       9   0.00%
-Inventory::getDramaIndex(std::string const&, std::string const&)                                                                                       9       9   0.00%         9       9   0.00%
-Inventory::borrowMovie(std::string const&, int const&)                                                                                                19      19   0.00%        46      46   0.00%
-Inventory::returnMovie(std::string const&, int const&)                                                                                                 7       7   0.00%        19      19   0.00%
-Inventory::sortByDrama(DramaMovie*, DramaMovie*)                                                                                                       1       1   0.00%         3       3   0.00%
-Inventory::sortByComedy(ComedyMovie*, ComedyMovie*)                                                                                                    1       1   0.00%         3       3   0.00%
-Inventory::sortByClassic(ClassicMovie*, ClassicMovie*)                                                                                                 1       1   0.00%         3       3   0.00%
-Inventory::sortMovies()                                                                                                                                1       1   0.00%         5       5   0.00%
+Inventory::addDramaMovie(int const&, std::string const&, std::string const&, int const&)                                                               5       1  80.00%        11       4  63.64%
+Inventory::addComedyMovie(int const&, std::string const&, std::string const&, int const&)                                                              5       1  80.00%        10       3  70.00%
+Inventory::addClassicMovie(int const&, std::string const&, std::string const&, std::string const&, std::string const&, int const&, int const&)         5       1  80.00%        11       3  72.73%
+Inventory::peekClassicMovie(int const&) const                                                                                                          6       1  83.33%         8       3  62.50%
+Inventory::peekComedyMovie(int const&) const                                                                                                           6       1  83.33%         7       3  57.14%
+Inventory::peekDramaMovie(int const&) const                                                                                                            6       1  83.33%         7       3  57.14%
+Inventory::getClassicIndex(int const&, int const&, std::string const&, std::string const&)                                                            13       1  92.31%        11       0 100.00%
+Inventory::getComedyIndex(int const&, std::string const&)                                                                                              9       0 100.00%         9       0 100.00%
+Inventory::getDramaIndex(std::string const&, std::string const&)                                                                                       9       0 100.00%         9       0 100.00%
+Inventory::borrowMovie(std::string const&, int const&)                                                                                                19       3  84.21%        46       9  80.43%
+Inventory::returnMovie(std::string const&, int const&)                                                                                                 7       1  85.71%        19       4  78.95%
+Inventory::sortByDrama(DramaMovie*, DramaMovie*)                                                                                                       1       0 100.00%         3       0 100.00%
+Inventory::sortByComedy(ComedyMovie*, ComedyMovie*)                                                                                                    1       0 100.00%         3       0 100.00%
+Inventory::sortByClassic(ClassicMovie*, ClassicMovie*)                                                                                                 1       0 100.00%         3       0 100.00%
+Inventory::sortMovies()                                                                                                                                1       0 100.00%         5       0 100.00%
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-TOTAL                                                                                                                                                 94      94   0.00%       160     160   0.00%
+TOTAL                                                                                                                                                 94      11  88.30%       162      32  80.25%
 
 File '/home/NETID/schau623/2021wi343b-movie-schau623/main.cpp':
 Name                                                                                                                                             Regions    Miss   Cover     Lines    Miss   Cover
@@ -106,807 +239,204 @@ TOTAL                                                                           
 File '/home/NETID/schau623/2021wi343b-movie-schau623/Store.cpp':
 Name                                                                                                                                             Regions    Miss   Cover     Lines    Miss   Cover
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Store::Store()                                                                                                                                         1       1   0.00%         1       1   0.00%
-Store::fillCustomerDatabase(std::string const&)                                                                                                        8       8   0.00%        22      22   0.00%
-Store::stockDVDShelves(std::string const&)                                                                                                            23      23   0.00%        47      47   0.00%
-Store::readTransactions(std::string const&)                                                                                                          105     105   0.00%       298     298   0.00%
-Store::displayInventory()                                                                                                                              1       1   0.00%         4       4   0.00%
+Store::Store()                                                                                                                                         1       0 100.00%         1       0 100.00%
+Store::fillCustomerDatabase(std::string const&)                                                                                                       15       2  86.67%        31       6  80.65%
+Store::stockDVDShelves(std::string const&)                                                                                                            23       1  95.65%        55       2  96.36%
+Store::readTransactions(std::string const&)                                                                                                          105      28  73.33%       300      85  71.67%
+Store::displayInventory()                                                                                                                              1       0 100.00%         4       0 100.00%
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-TOTAL                                                                                                                                                138     138   0.00%       372     372   0.00%
+TOTAL                                                                                                                                                145      31  78.62%       391      93  76.21%
 
 File '/home/NETID/schau623/2021wi343b-movie-schau623/store_test.cpp':
 Name                                                                                                                                             Regions    Miss   Cover     Lines    Miss   Cover
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-testStore1()                                                                                                                                           3       0 100.00%        19       0 100.00%
-testStore2()                                                                                                                                           1       0 100.00%         4       0 100.00%
-testStoreFinal()                                                                                                                                       1       0 100.00%         6       0 100.00%
-testAll()                                                                                                                                              1       0 100.00%         5       0 100.00%
+testMovies()                                                                                                                                           1       0 100.00%        43       0 100.00%
+testHashTable()                                                                                                                                        1       0 100.00%        33       0 100.00%
+testCustomer()                                                                                                                                         1       0 100.00%        16       0 100.00%
+testStoreAndInventory()                                                                                                                                1       1   0.00%         7       7   0.00%
+testFinal()                                                                                                                                            1       0 100.00%         7       0 100.00%
+testAll()                                                                                                                                              1       0 100.00%         7       0 100.00%
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-TOTAL                                                                                                                                                  6       0 100.00%        34       0 100.00%
+TOTAL                                                                                                                                                  6       1  83.33%       113       7  93.81%
 
 File '/home/NETID/schau623/2021wi343b-movie-schau623/Transaction.cpp':
 Name                                                                                                                                             Regions    Miss   Cover     Lines    Miss   Cover
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Transaction::Transaction(char const&, std::string const&, std::string const&, std::string const&, char const&)                                        11      11   0.00%        24      24   0.00%
+Transaction::Transaction(char const&, std::string const&, std::string const&, std::string const&, char const&)                                        11       1  90.91%        24       2  91.67%
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-TOTAL                                                                                                                                                 11      11   0.00%        24      24   0.00%
+TOTAL                                                                                                                                                 11       1  90.91%        24       2  91.67%
 =====================================================
 The lines below were never executed
 =====================================================
-   20|      0|      : Movie(stock, title, director, relYear) {
-   21|      0|    this->majorActorFirst = majActorFirstName;
-   22|      0|    this->majorActorLast = majActorLastName;
-   23|      0|    this->releaseMonth = relMonth;
-   24|      0|    this->type = 'C';
-   25|      0|  }
-   30|      0|              other->getReleaseYear()) {
-   31|      0|    this->releaseMonth = other->getReleaseMonth();
-   32|      0|    this->majorActorFirst = other->getMajorActorFirst();
-   33|      0|    this->majorActorLast = other->getMajorActorLast();
-   34|      0|    this->type = 'C';
-   35|      0|  }
-   37|      0|  int getReleaseMonth() const { return releaseMonth; }
-   38|      0|  string getMajorActorFirst() const { return majorActorFirst; }
-   39|      0|  string getMajorActorLast() const { return majorActorLast; }
-   41|      0|  ostream &display(ostream &os) const override {
-   42|      0|    os << "[" << title << "] Classic | " << releaseMonth << "/" << releaseYear
-   43|      0|       << " | By " << director << " | "
-   44|      0|       << "Featuring " << majorActorFirst << " " << majorActorLast << " | "
-   45|      0|       << stock << " copies available / " << borrowed
-   46|      0|       << " copies currently being borrowed." << endl;
-   47|      0|    return os;
-   48|      0|  }
-   50|      0|  bool equals(Movie *other) const override {
-   51|      0|    assert(other != nullptr);
-   52|      0|    auto otherMovie = dynamic_cast<ClassicMovie *>(other);
-   53|      0|    // assert(otherMovie && otherMovie == other);
-   54|      0|    return (title == otherMovie->title && director == otherMovie->director &&
-   55|      0|            releaseMonth == otherMovie->releaseMonth &&
-   56|      0|            releaseYear == otherMovie->releaseYear &&
-   57|      0|            majorActorFirst == otherMovie->majorActorFirst &&
-   58|      0|            majorActorLast == otherMovie->majorActorLast);
-   59|      0|  }
-   61|      0|  bool greaterThan(Movie *other) const override {
-   62|      0|    if (equals(other)) {
-   63|      0|      return false;
-   64|      0|    }
-   65|      0|    return (!lessThan(other));
-   66|      0|  }
-   68|      0|  bool lessThan(Movie *other) const override {
-   69|      0|    assert(other != nullptr);
-   70|      0|    auto rhs = dynamic_cast<ClassicMovie *>(other);
-   71|      0|    if (equals(other)) {
+   39|      0|              other->getReleaseYear()) {
+   40|      0|    this->releaseMonth = other->getReleaseMonth();
+   41|      0|    this->majorActorFirst = other->getMajorActorFirst();
+   42|      0|    this->majorActorLast = other->getMajorActorLast();
+   43|      0|    this->type = 'C';
+   44|      0|  }
    72|      0|      return false;
    73|      0|    }
-   74|      0|    if (releaseYear != rhs->getReleaseYear()) {
-   75|      0|      return releaseYear < rhs->getReleaseYear();
-   76|      0|    }
-   77|      0|    if (releaseMonth != rhs->getReleaseMonth()) {
-   78|      0|      return releaseMonth < rhs->getReleaseMonth();
-   79|      0|    }
-   80|      0|    if (releaseMonth != rhs->getReleaseMonth()) {
-   81|      0|      return releaseMonth < rhs->getReleaseMonth();
-   82|      0|    }
-   83|      0|    string actorName = majorActorFirst + " " + majorActorLast;
-   84|      0|    string actorNameRHS =
-   85|      0|        rhs->getMajorActorFirst() + " " + rhs->getMajorActorLast();
-   86|      0|    if (actorName != actorNameRHS) {
-   87|      0|      return actorName < actorNameRHS;
-   88|      0|    }
-   89|      0|    return false;
-   90|      0|  }
-   17|      0|      : Movie(stock, title, director, releaseYear) {
-   18|      0|    this->type = 'F';
-   19|      0|  }
-   20|      0|  ostream &display(ostream &os) const override {
-   21|      0|    os << "[" << title << "] Comedy | " << releaseYear << " | By " << director
-   22|      0|       << " | " << stock << " copies available / " << borrowed
-   23|      0|       << " copies currently being borrowed." << endl;
-   24|      0|    return os;
-   25|      0|  }
-   27|      0|  bool equals(Movie *m) const override {
-   28|      0|    return ((type == m->getType()) && (title == m->getTitle()) &&
-   29|      0|            (director == m->getDirector()) &&
-   30|      0|            (releaseYear == m->getReleaseYear()));
-   31|      0|  }
-   33|      0|  bool greaterThan(Movie *m) const override { return (!lessThan(m)); }
-   35|      0|  bool lessThan(Movie *m) const override {
-   36|      0|    if (equals(m)) {
-   37|      0|      return false;
-   38|      0|    }
-   39|      0|    if (title != m->getTitle()) {
-   40|      0|      return title < m->getTitle();
-   41|      0|    }
-   42|      0|    if (releaseYear != m->getReleaseYear()) {
-   43|      0|      return releaseYear < m->getReleaseYear();
+   82|      0|      return false;
+   83|      0|    }
+   91|      0|      return releaseMonth < rhs->getReleaseMonth();
+   92|      0|    }
+   99|      0|    return false;
+  100|      0|  }
+   47|      0|      return false;
+   48|      0|    }
+   55|      0|    return false;
+   56|      0|  }
+   47|      0|      return false;
+   48|      0|    }
+   55|      0|    return false;
+   56|      0|  }
+  |   31|      0|    {
+  |   32|      0|      int index = getIndex(
+  |   33|      0|          key); // We get the key's index, and update the value for that key.
+  |   34|      0|      values[index] = value;
+   43|      0|      return;
    44|      0|    }
-   45|      0|    return false;
-   46|      0|  }
-    3|      0|Customer::Customer(string first, string last, int id) {
-    4|      0|  customerFirstName = std::move(first);
-    5|      0|  customerSecondName = std::move(last);
-    6|      0|  customerID = id;
-    7|      0|}
-    9|      0|void Customer::addToHistory(Transaction *t) { history.push_back(t); }
-   11|      0|string Customer::getFirstName() const { return customerFirstName; }
-   13|      0|string Customer::getLastName() const { return customerSecondName; }
-   15|      0|int Customer::getCustomerID() const { return customerID; }
-   17|      0|void Customer::printHistory() {
-   18|      0|
-   19|      0|  cout << "____________________[Displaying " << customerFirstName << " "
-   20|      0|       << customerSecondName << "'s History]____________________" << endl;
-   21|      0|  if (history.empty()) {
-   22|      0|    cout << "History is Empty!" << endl;
-   23|      0|  } else {
-   24|      0|    for (int i = history.size() - 1; i > 0; i--) {
-   25|      0|      cout << *history[i];
-   26|      0|    }
-   27|      0|  }
-   28|      0|}
-   30|      0|void Customer::addBorrowed(char movieType, int movieIndex) {
-   31|      0|  borrowedMovies.emplace_back(make_pair(movieType, movieIndex));
-   32|      0|}
-   34|      0|void Customer::returnADVD(char movieType, int movieIndex) {
-   35|      0|  for (int i = 0; i < borrowedMovies.size(); i++) {
-   36|      0|    if (borrowedMovies[i].first == movieType &&
-   37|      0|        borrowedMovies[i].second == movieIndex) {
-   38|      0|      borrowedMovies.erase(borrowedMovies.begin() + i);
-   39|      0|      return;
-   40|      0|    }
-   41|      0|  }
-   42|      0|}
-   44|      0|bool Customer::isCurrentlyBorrowing(char movieType, int movieIndex) {
-   45|      0|  return count(borrowedMovies.begin(), borrowedMovies.end(),
-   46|      0|               make_pair(movieType, movieIndex)) != 0;
-   47|      0|}
-   17|      0|      : Movie(stock, title, director, releaseYear) {
-   18|      0|    this->type = 'D';
-   19|      0|  }
-   21|      0|  ostream &display(ostream &os) const override {
-   22|      0|    os << "[" << title << "] Drama | " << releaseYear << " | By " << director
-   23|      0|       << " | " << stock << " copies available / " << borrowed
-   24|      0|       << " copies currently being borrowed." << endl;
-   25|      0|    return os;
-   26|      0|  }
-   28|      0|  bool equals(Movie *m) const override {
-   29|      0|    return ((type == m->getType()) && (title == m->getTitle()) &&
-   30|      0|            (director == m->getDirector()) &&
-   31|      0|            (releaseYear == m->getReleaseYear()));
-   32|      0|  }
-   34|      0|  bool greaterThan(Movie *m) const override { return (!lessThan(m)); }
-   36|      0|  bool lessThan(Movie *m) const override {
-   37|      0|    if (equals(m)) {
-   38|      0|      return false;
-   39|      0|    }
-   40|      0|    if (director != m->getDirector()) {
-   41|      0|      return director < m->getDirector();
-   42|      0|    }
-   43|      0|    if (title != m->getTitle()) {
-   44|      0|      return title < m->getTitle();
-   45|      0|    }
-   46|      0|    return false;
-   47|      0|  }
-   17|      0|  void put(K &key, V &value) {
-   18|      0|    if (find(keys.begin(), keys.end(), key) !=
-   19|      0|        keys.end()) // If our hashtable contains the key
-   20|      0|    {
-   21|      0|      int index = getIndex(
-   22|      0|          key); // We get the key's index, and update the value for that key.
-   23|      0|      values[index] = value;
-   24|      0|    } else {
-   25|      0|      keys.push_back(key);
-   26|      0|      values.push_back(value);
-   27|      0|    }
-   28|      0|  }
-   39|      0|  bool contains(K key) {
-   40|      0|    return find(keys.begin(), keys.end(), key) != keys.end();
-   41|      0|  }
-   43|      0|  V &get(K key) {
-   44|      0|    int index = getIndex(key);
-   45|      0|    return values[index];
-   46|      0|  }
-   55|      0|  int getIndex(K key) {
-   56|      0|    auto it = find(keys.begin(), keys.end(), key);
-   57|      0|    if (it != keys.end()) {
-   58|      0|      int index = it - keys.begin();
-   59|      0|      return index;
-   60|      0|    }
-   61|      0|    return -1;
+   75|      0|    return -1;
+   76|      0|  }
+  |   75|      0|    return -1;
+  |   76|      0|  }
+  |   75|      0|    return -1;
+  |   76|      0|  }
+   19|      0|      i->setStock(d->getStockAmt() +
+   20|      0|                  i->getStockAmt()); // Just update that movie's stock amount.
+   21|      0|      return;
+   22|      0|    }
+   33|      0|      i->setStock(f->getStockAmt() + i->getStockAmt());
+   34|      0|      return;
+   35|      0|    }
+   49|      0|      i->setStock(c->getStockAmt() + i->getStockAmt());
+   50|      0|      return;
+   51|      0|    }
+   60|      0|    cerr << "ERROR: Index exceeds ClassicMovieShelf size" << endl;
+   61|      0|    return nullptr;
    62|      0|  }
-    5|      0|                              const string &director, const int &releaseYear) {
-    6|      0|  auto d = new DramaMovie(stock, title, director, releaseYear);
-    7|      0|  for (auto &i : dramaMovieShelf) {
-    8|      0|    if (d->equals(i)) {
-    9|      0|      i->setStock(d->getStockAmt() + i->getStockAmt());
-   10|      0|      return;
-   11|      0|    }
-   12|      0|  }
-   13|      0|  dramaMovieShelf.push_back(d);
-   14|      0|}
-   17|      0|                               const string &director, const int &releaseYear) {
-   18|      0|  auto f = new ComedyMovie(stock, title, director, releaseYear);
-   19|      0|  for (auto &i : comedyMovieShelf) {
-   20|      0|    if (f->equals(i)) {
-   21|      0|      i->setStock(f->getStockAmt() + i->getStockAmt());
-   22|      0|      return;
-   23|      0|    }
-   24|      0|  }
-   25|      0|  comedyMovieShelf.push_back(f);
-   26|      0|}
-   32|      0|                                const int &relMonth, const int &relYear) {
-   33|      0|  auto c = new ClassicMovie(stock, title, director, majActorFirstName,
-   34|      0|                            majActorLastName, relMonth, relYear);
-   35|      0|  for (auto &i : classicMovieShelf) {
-   36|      0|    if (c->equals(i)) {
-   37|      0|      i->setStock(c->getStockAmt() + i->getStockAmt());
-   38|      0|      return;
-   39|      0|    }
-   40|      0|  }
-   41|      0|  classicMovieShelf.push_back(c);
-   42|      0|}
-   45|      0|ClassicMovie *Inventory::peekClassicMovie(const int &index) const {
-   46|      0|  if (index >= classicMovieShelf.size() || index < 0) {
-   47|      0|    cerr << "ERROR: Index exceeds ClassicMovieShelf size" << endl;
-   48|      0|    return nullptr;
-   49|      0|  }
-   50|      0|  return classicMovieShelf[index];
-   51|      0|}
-   53|      0|ComedyMovie *Inventory::peekComedyMovie(const int &index) const {
-   54|      0|  if (index >= comedyMovieShelf.size() || index < 0) {
-   55|      0|    cerr << "ERROR: Index exceeds ComedyMovieShelf size" << endl;
-   56|      0|    return nullptr;
-   57|      0|  }
-   58|      0|  return comedyMovieShelf[index];
-   59|      0|}
-   61|      0|DramaMovie *Inventory::peekDramaMovie(const int &index) const {
-   62|      0|  if (index >= dramaMovieShelf.size() || index < 0) {
-   63|      0|    cerr << "ERROR: Index exceeds DramaMovieShelf size" << endl;
-   64|      0|    return nullptr;
-   65|      0|  }
-   66|      0|  return dramaMovieShelf[index];
-   67|      0|}
-   70|      0|                               const string &first, const string &last) {
-   71|      0|  for (int i = 0; i < classicMovieShelf.size(); i++) {
-   72|      0|    if (classicMovieShelf[i]->getReleaseMonth() == month &&
-   73|      0|        classicMovieShelf[i]->getReleaseYear() == year &&
-   74|      0|        classicMovieShelf[i]->getMajorActorFirst() == first &&
-   75|      0|        classicMovieShelf[i]->getMajorActorLast() == last) {
-   76|      0|      return i;
-   77|      0|    }
+   68|      0|    cerr << "ERROR: Index exceeds ComedyMovieShelf size" << endl;
+   69|      0|    return nullptr;
+   70|      0|  }
+   76|      0|    cerr << "ERROR: Index exceeds DramaMovieShelf size" << endl;
+   77|      0|    return nullptr;
    78|      0|  }
-   79|      0|  return -1;
-   80|      0|}
-   82|      0|int Inventory::getComedyIndex(const int &year, const string &title) {
-   83|      0|  for (int i = 0; i < comedyMovieShelf.size(); i++) {
-   84|      0|    if (comedyMovieShelf[i]->getReleaseYear() == year &&
-   85|      0|        comedyMovieShelf[i]->getTitle() == title) {
-   86|      0|      return i;
-   87|      0|    }
-   88|      0|  }
-   89|      0|  return -1;
-   90|      0|}
-   92|      0|int Inventory::getDramaIndex(const string &director, const string &title) {
-   93|      0|  for (int i = 0; i < dramaMovieShelf.size(); i++) {
-   94|      0|    if (dramaMovieShelf[i]->getDirector() == director &&
-   95|      0|        dramaMovieShelf[i]->getTitle() == title) {
-   96|      0|      return i;
-   97|      0|    }
-   98|      0|  }
-   99|      0|  return -1;
-  100|      0|}
-  102|      0|bool Inventory::borrowMovie(const string &movieType, const int &index) {
-  103|      0|  if (movieType == "C") {
-  104|      0|    int stockAmt = classicMovieShelf[index]->getStockAmt();
-  105|      0|    if (stockAmt >= 1) {
-  106|      0|      classicMovieShelf[index]->setStock(
-  107|      0|          classicMovieShelf[index]->getStockAmt() - 1);
-  108|      0|      classicMovieShelf[index]->setBorrowed(
-  109|      0|          classicMovieShelf[index]->getBorrowedAmt() + 1);
-  110|      0|      return true;
-  111|      0|    }
-  112|      0|    cerr << "ERROR: Insufficient stock of "
-  113|      0|         << classicMovieShelf[index]->getTitle() << ", "
-  114|      0|         << classicMovieShelf[index]->getReleaseMonth() << " "
-  115|      0|         << classicMovieShelf[index]->getReleaseYear() << endl;
-  116|      0|    return false;
-  117|      0|  }
-  118|      0|  if (movieType == "F") {
-  119|      0|    int stockAmt = comedyMovieShelf[index]->getStockAmt();
-  120|      0|    if (stockAmt >= 1) {
-  121|      0|      comedyMovieShelf[index]->setStock(comedyMovieShelf[index]->getStockAmt() -
-  122|      0|                                        1);
-  123|      0|      comedyMovieShelf[index]->setBorrowed(
-  124|      0|          comedyMovieShelf[index]->getBorrowedAmt() + 1);
-  125|      0|      return true;
-  126|      0|    }
-  127|      0|    cerr << "ERROR: Insufficient stock of "
-  128|      0|         << comedyMovieShelf[index]->getTitle() << ", "
-  129|      0|         << comedyMovieShelf[index]->getReleaseYear() << endl;
-  130|      0|    return false;
-  131|      0|  }
-  132|      0|  if (movieType == "D") {
-  133|      0|    int stockAmt = dramaMovieShelf[index]->getStockAmt();
-  134|      0|    if (stockAmt >= 1) {
-  135|      0|      dramaMovieShelf[index]->setStock(dramaMovieShelf[index]->getStockAmt() -
-  136|      0|                                       1);
-  137|      0|      dramaMovieShelf[index]->setBorrowed(
-  138|      0|          dramaMovieShelf[index]->getBorrowedAmt() + 1);
-  139|      0|      return true;
-  140|      0|    }
-  141|      0|    cerr << "ERROR: Insufficient stock of "
-  142|      0|         << dramaMovieShelf[index]->getTitle() << ", "
-  143|      0|         << dramaMovieShelf[index]->getReleaseYear() << endl;
-  144|      0|    return false;
-  145|      0|  }
-  146|      0|  return false;
-  147|      0|}
-  149|      0|void Inventory::returnMovie(const string &movieType, const int &index) {
-  150|      0|  if (movieType == "C") {
-  151|      0|    classicMovieShelf[index]->setStock(classicMovieShelf[index]->getStockAmt() +
-  152|      0|                                       1);
-  153|      0|    classicMovieShelf[index]->setBorrowed(
-  154|      0|        classicMovieShelf[index]->getBorrowedAmt() - 1);
-  155|      0|  }
-  156|      0|  if (movieType == "F") {
-  157|      0|    comedyMovieShelf[index]->setStock(comedyMovieShelf[index]->getStockAmt() +
-  158|      0|                                      1);
-  159|      0|    comedyMovieShelf[index]->setBorrowed(
-  160|      0|        comedyMovieShelf[index]->getBorrowedAmt() - 1);
+  144|      0|    cerr << "ERROR: Insufficient stock of "
+  145|      0|         << comedyMovieShelf[index]->getTitle() << ", "
+  146|      0|         << comedyMovieShelf[index]->getReleaseYear() << endl;
+  147|      0|    return false;
+  148|      0|  }
+  158|      0|    cerr << "ERROR: Insufficient stock of "
+  159|      0|         << dramaMovieShelf[index]->getTitle() << ", "
+  160|      0|         << dramaMovieShelf[index]->getReleaseYear() << endl;
   161|      0|  }
-  162|      0|  if (movieType == "D") {
-  163|      0|    dramaMovieShelf[index]->setStock(dramaMovieShelf[index]->getStockAmt() + 1);
-  164|      0|    dramaMovieShelf[index]->setBorrowed(
-  165|      0|        dramaMovieShelf[index]->getBorrowedAmt() - 1);
-  166|      0|  }
-  167|      0|}
-  169|      0|bool Inventory::sortByDrama(DramaMovie *a, DramaMovie *b) {
-  170|      0|  return a->lessThan(b);
-  171|      0|}
-  173|      0|bool Inventory::sortByComedy(ComedyMovie *a, ComedyMovie *b) {
-  174|      0|  return a->lessThan(b);
-  175|      0|}
-  177|      0|bool Inventory::sortByClassic(ClassicMovie *a, ClassicMovie *b) {
-  178|      0|  return a->lessThan(b);
-  179|      0|}
-  181|      0|void Inventory::sortMovies() {
-  182|      0|  std::sort(classicMovieShelf.begin(), classicMovieShelf.end(), sortByClassic);
-  183|      0|  std::sort(comedyMovieShelf.begin(), comedyMovieShelf.end(), sortByComedy);
-  184|      0|  std::sort(dramaMovieShelf.begin(), dramaMovieShelf.end(), sortByDrama);
-  185|      0|}
-   13|      0|  friend ostream &operator<<(ostream &os, const Inventory &inv) {
-   14|      0|    os << "____________________[Viewing Inventory]____________________" << endl;
-   15|      0|    for (auto i : inv.comedyMovieShelf) {
-   16|      0|      os << *(i);
-   17|      0|    }
-   18|      0|    for (auto j : inv.dramaMovieShelf) {
-   19|      0|      os << *(j);
-   20|      0|    }
-   21|      0|    for (auto k : inv.classicMovieShelf) {
-   22|      0|      os << *(k);
-   23|      0|    }
-   24|      0|    return os;
-   25|      0|  }
-   12|      0|  friend ostream &operator<<(ostream &os, const Movie &rhs) {
-   13|      0|    return rhs.display(os);
-   14|      0|  }
-   34|      0|        const int &releaseYear) {
-   35|      0|    this->stock = stock;
-   36|      0|    this->title = title;
-   37|      0|    this->director = director;
-   38|      0|    this->releaseYear = releaseYear;
-   39|      0|    this->borrowed = 0;
-   40|      0|  }
-   42|      0|  string getDirector() const { return director; }
-   44|      0|  string getTitle() const { return title; }
-   46|      0|  int getReleaseYear() const { return releaseYear; }
-   48|      0|  int getStockAmt() const { return stock; }
-   50|      0|  char getType() const { return type; }
-   52|      0|  void setStock(int amt) { this->stock = amt; }
-   54|      0|  void setBorrowed(int amt) { borrowed = amt; }
-   56|      0|  int getBorrowedAmt() const { return borrowed; }
-    7|      0|Store::Store() { inv = new Inventory(); }
-    9|      0|void Store::fillCustomerDatabase(const string &fileName) {
-   10|      0|  ifstream in(fileName);
-   11|      0|  string line; // Line were reading
-   12|      0|  if (!in) {
-   13|      0|    cout << "Can't open file " << fileName << endl;
-   14|      0|  }
-   15|      0|
-   16|      0|  while (!in.eof()) {
-   17|      0|    getline(in, line);
-   18|      0|    if (line.empty()) {
-   19|      0|      break;
-   20|      0|    }
-   21|      0|    istringstream parseLine(line);
-   22|      0|    int custID;
-   23|      0|    string first, last;
-   24|      0|    parseLine >> custID;
-   25|      0|    parseLine >> first >> last;
-   26|      0|    Customer *c = new Customer(first, last, custID);
-   27|      0|    customerDatabase.put(custID, c);
-   28|      0|  }
-   29|      0|  in.close();
-   30|      0|}
-   32|      0|void Store::stockDVDShelves(const string &fileName) {
-   33|      0|  ifstream in(fileName);
-   34|      0|  string line; // Line were reading
-   35|      0|  if (!in) {
-   36|      0|    cout << "Can't open file " << fileName << endl;
-   37|      0|  }
-   38|      0|
-   39|      0|  while (!in.eof()) {
-   40|      0|    getline(in, line);
-   41|      0|    if (line.empty()) {
-   42|      0|      break;
-   43|      0|    }
-   44|      0|    istringstream parseLine(line);
-   45|      0|    string token;
-   46|      0|    vector<string> tokens;
-   47|      0|    while (getline(parseLine, token, ',')) {
-   48|      0|      if (token[0] == ' ') // Remove beginning space.
-   49|      0|      {
-   50|      0|        token.erase(0, 1);
-   51|      0|      }
-   52|      0|      tokens.push_back(token);
-   53|      0|    }
-   54|      0|    string movieType = tokens[0];
-   55|      0|    if (movieType == "C") {
-   56|      0|      int stock = stoi(tokens[1]);
-   57|      0|      string dir = tokens[2];
-   58|      0|      string title = tokens[3];
-   59|      0|      istringstream ss2(tokens[4]);
-   60|      0|      string firstName, lastName, month, year;
-   61|      0|      ss2 >> firstName >> lastName >> month >> year;
-   62|      0|      inv->addClassicMovie(stock, title, dir, firstName, lastName, stoi(month),
-   63|      0|                           stoi(year));
-   64|      0|    } else if (movieType == "F" || movieType == "D") {
-   65|      0|      int stock = stoi(tokens[1]);
-   66|      0|      string dir = tokens[2];
-   67|      0|      string title = tokens[3];
-   68|      0|      int year = stoi(tokens[4]);
-   69|      0|      if (movieType == "F") {
-   70|      0|        inv->addComedyMovie(stock, title, dir, year);
-   71|      0|      } else {
-   72|      0|        inv->addDramaMovie(stock, title, dir, year);
-   73|      0|      }
-   74|      0|    } else {
-   75|      0|      cerr << "ERROR: Invalid Movie Type: " << movieType << endl;
-   76|      0|    }
-   77|      0|  }
-   78|      0|}
-   80|      0|void Store::readTransactions(const string &fileName) {
-   81|      0|  ifstream in(fileName);
-   82|      0|  string line; // Line were reading
-   83|      0|  if (!in) {
-   84|      0|    cout << "Can't open file " << fileName << endl;
-   85|      0|  }
-   86|      0|  while (!in.eof()) {
-   87|      0|    getline(in, line);
-   88|      0|    if (line.empty()) {
-   89|      0|      break;
-   90|      0|    }
-   91|      0|    istringstream parseLine(line);
-   92|      0|    string transType;
-   93|      0|    parseLine >> transType; // First letter is the Store Transaction Type
-   94|      0|
-   95|      0|    switch (transType[0]) {
-   96|      0|    case 'I': {
-   97|      0|      displayInventory();
-   98|      0|      break;
-   99|      0|    }
-  100|      0|    case 'H': {
-  101|      0|      int custID;
-  102|      0|      parseLine >> custID;
-  103|      0|      customerDatabase.get(custID)->printHistory();
-  104|      0|      break;
-  105|      0|    }
-  106|      0|    case 'R': {
-  107|      0|      int custID;
-  108|      0|      string mediaType, movieType;
-  109|      0|      parseLine >> custID;
-  110|      0|      parseLine >> mediaType;
-  111|      0|      if (mediaType == "D") {
-  112|      0|        parseLine >> movieType;
-  113|      0|        if (movieType == "C") {
-  114|      0|          int month, year;
-  115|      0|          string first, last;
-  116|      0|          // C 5 1940 Katherine Hepburn
-  117|      0|          parseLine >> month;
-  118|      0|          parseLine >> year;
-  119|      0|          parseLine >> first;
-  120|      0|          parseLine >> last;
-  121|      0|          int idx = inv->getClassicIndex(month, year, first, last);
-  122|      0|          if (idx == -1) // If Classic movie doesn't exist, error
-  123|      0|          {
-  124|      0|            cerr << "ERROR: Classic Movie Not Found!" << endl;
-  125|      0|          } else // Otherwise, movie exists
-  126|      0|          {
-  127|      0|            ClassicMovie *c = inv->peekClassicMovie(idx);
-  128|      0|            if (customerDatabase.contains(
-  129|      0|                    custID)) // If Customer exists, continue
-  130|      0|            {
-  131|      0|              // check
-  132|      0|              if (customerDatabase.get(custID)->isCurrentlyBorrowing('C',
-  133|      0|                                                                     idx)) {
-  134|      0|                inv->returnMovie(movieType, idx);
-  135|      0|                Transaction *t = new Transaction(
-  136|      0|                    'C', c->getTitle(), c->getDirector(),
-  137|      0|                    customerDatabase.get(custID)->getFirstName() + " " +
-  138|      0|                        customerDatabase.get(custID)->getLastName(),
-  139|      0|                    transType[0]);
-  140|      0|                customerDatabase.get(custID)->addToHistory(t);
-  141|      0|              } else {
-  142|      0|                cerr << "ERROR: "
-  143|      0|                     << customerDatabase.get(custID)->getFirstName() << " "
-  144|      0|                     << customerDatabase.get(custID)->getLastName()
-  145|      0|                     << " is not currently borrowing the classic movie "
-  146|      0|                     << c->getTitle() << ", " << c->getDirector()
-  147|      0|                     << ", so we can't return it." << endl;
-  148|      0|              }
-  149|      0|            } else // Otherwise, the customer doesn't exist. Throw an error.
-  150|      0|            {
-  151|      0|              cerr << "ERROR: Invalid Customer ID: " << custID << endl;
-  152|      0|            }
-  153|      0|          }
-  154|      0|        } else if (movieType == "F") {
-  155|      0|          // F You've Got Mail, 1998
-  156|      0|          int year;
-  157|      0|          string title;
-  158|      0|          string token;
-  159|      0|          vector<string> tokens;
-  160|      0|          while (getline(parseLine, token, ',')) {
-  161|      0|            if (token[0] == ' ') // Remove beginning space.
-  162|      0|            {
-  163|      0|              token.erase(0, 1);
-  164|      0|            }
-  165|      0|            tokens.push_back(token);
-  166|      0|          }
-  167|      0|          title = tokens[0];
-  168|      0|          year = stoi(tokens[1]);
-  169|      0|          int idx = inv->getComedyIndex(year, title);
-  170|      0|          if (idx == -1) {
-  171|      0|            cerr << "ERROR: Comedy Movie: " << title << ", " << year
-  172|      0|                 << " Not Found!" << endl;
-  173|      0|          } else {
-  174|      0|            ComedyMovie *c = inv->peekComedyMovie(idx);
-  175|      0|            if (customerDatabase.contains(
-  176|      0|                    custID)) // if customer exists, continue
-  177|      0|            {
-  178|      0|              if (customerDatabase.get(custID)->isCurrentlyBorrowing(
-  179|      0|                      'F', idx)) // if customer is borrowing this movie, we can
-  180|      0|                                 // successfully return it
-  181|      0|              {
-  182|      0|                inv->returnMovie(movieType, idx);
-  183|      0|                Transaction *t = new Transaction(
-  184|      0|                    'F', c->getTitle(), c->getDirector(),
-  185|      0|                    customerDatabase.get(custID)->getFirstName() + " " +
-  186|      0|                        customerDatabase.get(custID)->getLastName(),
-  187|      0|                    transType[0]);
-  188|      0|
-  189|      0|                customerDatabase.get(custID)->addToHistory(t);
-  190|      0|              } else {
-  191|      0|                cerr << "ERROR: "
-  192|      0|                     << customerDatabase.get(custID)->getFirstName() << " "
-  193|      0|                     << customerDatabase.get(custID)->getLastName()
-  194|      0|                     << " is not currently borrowing the comedy movie "
-  195|      0|                     << c->getTitle() << ", " << c->getDirector()
-  196|      0|                     << ", so we can't return it." << endl;
-  197|      0|              }
-  198|      0|            } else // otherwise error for non-existent ID.
-  199|      0|            {
-  200|      0|              cerr << "ERROR: Invalid Customer ID: " << custID << endl;
-  201|      0|            }
-  202|      0|          }
-  203|      0|        } else if (movieType == "D") {
-  204|      0|          // D Barry Levinson, Good Morning Vietnam,
-  205|      0|          string director, title;
-  206|      0|          string token;
-  207|      0|          vector<string> tokens;
-  208|      0|          while (getline(parseLine, token, ',')) {
-  209|      0|            if (token[0] == ' ') // Remove beginning space.
-  210|      0|            {
-  211|      0|              token.erase(0, 1);
-  212|      0|            }
-  213|      0|            tokens.push_back(token);
-  214|      0|          }
-  215|      0|          director = tokens[0];
-  216|      0|          title = tokens[1];
-  217|      0|          int idx = inv->getDramaIndex(director, title);
-  218|      0|          if (idx == -1) // If movie not found throw error
-  219|      0|          {
-  220|      0|            cerr << "ERROR: Drama Movie: " << title << " by " << director
-  221|      0|                 << " Not Found!" << endl;
-  222|      0|          } else // Otherwise movie exists, continue
-  223|      0|          {
-  224|      0|            DramaMovie *d = inv->peekDramaMovie(idx);
-  225|      0|            if (customerDatabase.contains(
-  226|      0|                    custID)) // if customer exists, continue
-  227|      0|            {
-  228|      0|              if (customerDatabase.get(custID)->isCurrentlyBorrowing('D',
-  229|      0|                                                                     idx)) {
-  230|      0|                inv->returnMovie(movieType, idx);
-  231|      0|                Transaction *t = new Transaction(
-  232|      0|                    'D', d->getTitle(), d->getDirector(),
-  233|      0|                    customerDatabase.get(custID)->getFirstName() + " " +
-  234|      0|                        customerDatabase.get(custID)->getLastName(),
-  235|      0|                    transType[0]);
-  236|      0|
-  237|      0|                customerDatabase.get(custID)->addToHistory(t);
-  238|      0|              } else {
-  239|      0|                cerr << "ERROR: "
-  240|      0|                     << customerDatabase.get(custID)->getFirstName() << " "
-  241|      0|                     << customerDatabase.get(custID)->getLastName()
-  242|      0|                     << " is not currently borrowing the drama movie "
-  243|      0|                     << d->getTitle() << ", " << d->getDirector()
-  244|      0|                     << ", so we can't return it." << endl;
-  245|      0|              }
-  246|      0|            } else // throw error for non existing customer
-  247|      0|            {
-  248|      0|              cerr << "ERROR: Invalid Customer ID: " << custID << endl;
-  249|      0|            }
-  250|      0|          }
-  251|      0|        } else {
-  252|      0|          cerr << "ERROR: Invalid Movie Type: " << movieType << endl;
-  253|      0|        }
-  254|      0|      } // if media type is d
-  255|      0|      else {
-  256|      0|        cerr << "ERROR: Invalid Media Type:" << mediaType << endl;
-  257|      0|      }
-  258|      0|      break;
-  259|      0|    }
-  260|      0|    case 'B': {
-  261|      0|      int custID;
-  262|      0|      string movieType, mediaType;
-  263|      0|      parseLine >> custID;
-  264|      0|      parseLine >> mediaType;
-  265|      0|      if (mediaType == "D") {
-  266|      0|        parseLine >> movieType;
-  267|      0|        if (movieType == "C") {
-  268|      0|          int month, year;
-  269|      0|          string first, last;
-  270|      0|          // C 5 1940 Katherine Hepburn
-  271|      0|          parseLine >> month;
-  272|      0|          parseLine >> year;
-  273|      0|          parseLine >> first;
-  274|      0|          parseLine >> last;
-  275|      0|          int idx = inv->getClassicIndex(month, year, first, last);
-  276|      0|          if (idx == -1) {
-  277|      0|            cerr << "ERROR: Classic Movie Not Found!" << endl;
-  278|      0|          } else {
-  279|      0|            if (customerDatabase.contains(custID)) {
-  280|      0|              if (inv->borrowMovie(movieType, idx)) {
-  281|      0|                ClassicMovie *c = inv->peekClassicMovie(idx);
-  282|      0|                Transaction *t = new Transaction(
-  283|      0|                    'C', c->getTitle(), c->getDirector(),
-  284|      0|                    customerDatabase.get(custID)->getFirstName() + " " +
-  285|      0|                        customerDatabase.get(custID)->getLastName(),
-  286|      0|                    transType[0]);
-  287|      0|                customerDatabase.get(custID)->addBorrowed('C', idx);
-  288|      0|                customerDatabase.get(custID)->addToHistory(t);
-  289|      0|              }
-  290|      0|            } else {
-  291|      0|              cerr << "ERROR: Invalid Customer ID: " << custID << endl;
-  292|      0|            }
-  293|      0|          }
-  294|      0|        } else if (movieType == "F") {
-  295|      0|          // F You've Got Mail, 1998
-  296|      0|          int year;
-  297|      0|          string title;
-  298|      0|          string token;
-  299|      0|          vector<string> tokens;
-  300|      0|          while (getline(parseLine, token, ',')) {
-  301|      0|            if (token[0] == ' ') // Remove beginning space.
-  302|      0|            {
-  303|      0|              token.erase(0, 1);
-  304|      0|            }
-  305|      0|            tokens.push_back(token);
-  306|      0|          }
-  307|      0|          title = tokens[0];
-  308|      0|          year = stoi(tokens[1]);
-  309|      0|          int idx = inv->getComedyIndex(year, title);
-  310|      0|          if (idx == -1) {
-  311|      0|            cerr << "ERROR: Comedy Movie: " << title << ", " << year
-  312|      0|                 << " Not Found!" << endl;
-  313|      0|          } else {
-  314|      0|            if (customerDatabase.contains(custID)) {
-  315|      0|              if (inv->borrowMovie(movieType, idx)) {
-  316|      0|                ComedyMovie *c = inv->peekComedyMovie(idx);
-  317|      0|                Transaction *t = new Transaction(
-  318|      0|                    'C', c->getTitle(), c->getDirector(),
-  319|      0|                    customerDatabase.get(custID)->getFirstName() + " " +
-  320|      0|                        customerDatabase.get(custID)->getLastName(),
-  321|      0|                    transType[0]);
-  322|      0|                customerDatabase.get(custID)->addBorrowed('F', idx);
-  323|      0|                customerDatabase.get(custID)->addToHistory(t);
-  324|      0|              }
-  325|      0|            } else {
-  326|      0|              cerr << "ERROR: Invalid Customer ID: " << custID << endl;
-  327|      0|            }
-  328|      0|          }
-  329|      0|        } else if (movieType == "D") {
-  330|      0|          // D Barry Levinson, Good Morning Vietnam,
-  331|      0|          string director, title;
-  332|      0|          string token;
-  333|      0|          vector<string> tokens;
-  334|      0|          while (getline(parseLine, token, ',')) {
-  335|      0|            if (token[0] == ' ') // Remove beginning space.
-  336|      0|            {
-  337|      0|              token.erase(0, 1);
-  338|      0|            }
-  339|      0|            tokens.push_back(token);
-  340|      0|          }
-  341|      0|          director = tokens[0];
-  342|      0|          title = tokens[1];
-  343|      0|          int idx = inv->getDramaIndex(director, title);
-  344|      0|          if (idx == -1) {
-  345|      0|            cerr << "ERROR: Drama Movie: " << title << " by " << director
-  346|      0|                 << " Not Found!" << endl;
-  347|      0|          } else {
-  348|      0|            if (customerDatabase.contains(custID)) {
-  349|      0|              if (inv->borrowMovie(movieType, idx)) {
-  350|      0|                DramaMovie *c = inv->peekDramaMovie(idx);
-  351|      0|                Transaction *t = new Transaction(
-  352|      0|                    'C', c->getTitle(), c->getDirector(),
-  353|      0|                    customerDatabase.get(custID)->getFirstName() + " " +
-  354|      0|                        customerDatabase.get(custID)->getLastName(),
-  355|      0|                    transType[0]);
-  356|      0|                customerDatabase.get(custID)->addBorrowed('D', idx);
-  357|      0|                customerDatabase.get(custID)->addToHistory(t);
-  358|      0|              }
-  359|      0|            } else {
-  360|      0|              cerr << "ERROR: Invalid Customer ID: " << custID << endl;
-  361|      0|            }
-  362|      0|          }
-  363|      0|        } else {
-  364|      0|          cerr << "ERROR: Invalid Movie Type: " << movieType << endl;
-  365|      0|        }
-  366|      0|      } else {
-  367|      0|        cerr << "ERROR: Invalid Media Type:" << mediaType << endl;
-  368|      0|      }
-  369|      0|      break;
-  370|      0|    }
-  371|      0|    default:
-  372|      0|      cerr << transType << " is an invalid transaction type." << endl;
-  373|      0|      break;
-  374|      0|    }
-  375|      0|    inv->sortMovies();
-  376|      0|  }
-  377|      0|}
-  379|      0|void Store::displayInventory() {
-  380|      0|  inv->sortMovies();
-  381|      0|  cout << *inv;
-  382|      0|}
-    6|      0|                         const char &type) {
-    7|      0|  switch (movType) {
-    8|      0|  case 'F':
-    9|      0|    movieType = "Comedy";
-   10|      0|    break;
-   11|      0|  case 'C':
-   12|      0|    movieType = "Classic";
-   13|      0|    break;
-   14|      0|  case 'D':
-   15|      0|    movieType = "Drama";
-   16|      0|    break;
-   17|      0|  default:
-   18|      0|    cerr << "ERROR: Invalid Movie Type: " << movieType << endl;
-   19|      0|    break;
-   20|      0|  }
-   21|      0|  movieTitle = movTitle;
-   22|      0|  director = dirName;
-   23|      0|  customerInvolved = customerName;
-   24|      0|  if (type == 'B') {
-   25|      0|    transactionType = "borrow";
-   26|      0|  } else if (type == 'R') {
-   27|      0|    transactionType = "return";
-   28|      0|  }
-   29|      0|}
-    7|      0|  friend ostream &operator<<(ostream &os, const Transaction &rhs) {
-    8|      0|    os << rhs.customerInvolved << " " << rhs.transactionType << "ed "
-    9|      0|       << "'" << rhs.movieTitle << "' which is a " << rhs.movieType
-   10|      0|       << " movie by " << rhs.director << endl;
-   11|      0|    return os;
-   12|      0|  }
-Sun Mar 14 15:12:56 PDT 2021
+  180|      0|    dramaMovieShelf[index]->setStock(dramaMovieShelf[index]->getStockAmt() + 1);
+  181|      0|    dramaMovieShelf[index]->setBorrowed(
+  182|      0|        dramaMovieShelf[index]->getBorrowedAmt() - 1);
+  183|      0|  }
+   15|      0|    cout << "Can't open file " << fileName << endl;
+   16|      0|  }
+   33|      0|    else
+   34|      0|    {
+   35|      0|      cerr << "ERROR: Invalid Customer Id: " << custID << endl;
+   36|      0|    }
+   47|      0|    cout << "Can't open file " << fileName << endl;
+   48|      0|  }
+  104|      0|    cout << "Can't open file " << fileName << endl;
+  105|      0|  }
+  145|      0|          {
+  146|      0|            cerr << "ERROR: Classic Movie Not Found!" << endl;
+  147|      0|          } else // Otherwise, movie exists
+  164|      0|                cerr << "ERROR: "
+  165|      0|                     << customerDatabase.get(custID)->getFirstName() << " "
+  166|      0|                     << customerDatabase.get(custID)->getLastName()
+  167|      0|                     << " is not currently borrowing the classic movie "
+  168|      0|                     << c->getTitle() << ", " << c->getDirector()
+  169|      0|                     << ", so we can't return it." << endl;
+  170|      0|              }
+  172|      0|            {
+  173|      0|              cerr << "ERROR: Invalid Customer ID: " << custID << endl;
+  174|      0|            }
+  193|      0|            cerr << "ERROR: Comedy Movie: " << title << ", " << year
+  194|      0|                 << " Not Found!" << endl;
+  213|      0|                cerr << "ERROR: "
+  214|      0|                     << customerDatabase.get(custID)->getFirstName() << " "
+  215|      0|                     << customerDatabase.get(custID)->getLastName()
+  216|      0|                     << " is not currently borrowing the comedy movie "
+  217|      0|                     << c->getTitle() << ", " << c->getDirector()
+  218|      0|                     << ", so we can't return it." << endl;
+  219|      0|              }
+  221|      0|            {
+  222|      0|              cerr << "ERROR: Invalid Customer ID: " << custID << endl;
+  223|      0|            }
+  226|      0|          // D Barry Levinson, Good Morning Vietnam,
+  227|      0|          string director, title;
+  228|      0|          string token;
+  229|      0|          vector<string> tokens;
+  230|      0|          while (getline(parseLine, token, ',')) {
+  231|      0|            if (token[0] == ' ') // Remove beginning space.
+  232|      0|            {
+  233|      0|              token.erase(0, 1);
+  234|      0|            }
+  235|      0|            tokens.push_back(token);
+  236|      0|          }
+  237|      0|          director = tokens[0];
+  238|      0|          title = tokens[1];
+  239|      0|          int idx = inv->getDramaIndex(director, title);
+  240|      0|          if (idx == -1) // If movie not found throw error
+  241|      0|          {
+  242|      0|            cerr << "ERROR: Drama Movie: " << title << " by " << director
+  243|      0|                 << " Not Found!" << endl;
+  244|      0|          } else // Otherwise movie exists, continue
+  245|      0|          {
+  246|      0|            DramaMovie *d = inv->peekDramaMovie(idx);
+  247|      0|            if (customerDatabase.contains(
+  248|      0|                    custID)) // if customer exists, continue
+  249|      0|            {
+  250|      0|              if (customerDatabase.get(custID)->isCurrentlyBorrowing('D',
+  251|      0|                                                                     idx)) {
+  252|      0|                inv->returnMovie(movieType, idx);
+  253|      0|                Transaction *t = new Transaction(
+  254|      0|                    'D', d->getTitle(), d->getDirector(),
+  255|      0|                    customerDatabase.get(custID)->getFirstName() + " " +
+  256|      0|                        customerDatabase.get(custID)->getLastName(),
+  257|      0|                    transType[0]);
+  258|      0|
+  259|      0|                customerDatabase.get(custID)->addToHistory(t);
+  260|      0|              } else {
+  261|      0|                cerr << "ERROR: "
+  262|      0|                     << customerDatabase.get(custID)->getFirstName() << " "
+  263|      0|                     << customerDatabase.get(custID)->getLastName()
+  264|      0|                     << " is not currently borrowing the drama movie "
+  265|      0|                     << d->getTitle() << ", " << d->getDirector()
+  266|      0|                     << ", so we can't return it." << endl;
+  267|      0|              }
+  268|      0|            } else // throw error for non existing customer
+  269|      0|            {
+  270|      0|              cerr << "ERROR: Invalid Customer ID: " << custID << endl;
+  271|      0|            }
+  272|      0|          }
+  273|      0|        } else {
+  274|      0|          cerr << "ERROR: Invalid Movie Type: " << movieType << endl;
+  275|      0|        }
+  277|      0|      else {
+  278|      0|        cerr << "ERROR: Invalid Media Type:" << mediaType << endl;
+  279|      0|      }
+  299|      0|            cerr << "ERROR: Classic Movie Not Found!" << endl;
+  348|      0|              cerr << "ERROR: Invalid Customer ID: " << custID << endl;
+  349|      0|            }
+  382|      0|              cerr << "ERROR: Invalid Customer ID: " << custID << endl;
+  383|      0|            }
+   28|      0|    cerr << "ERROR: Invalid Movie Type: " << movieType << endl;
+   29|      0|    break;
+  118|      0|void testStoreAndInventory() {
+  119|      0|  Store s;
+  120|      0|  s.fillCustomerDatabase("AlanCustomers.txt");
+  121|      0|  s.stockDVDShelves("AlanMovies.txt");
+  122|      0|  s.readTransactions("AlanCommands.txt");
+  123|      0|  cout << "Store tests ran" << endl;
+  124|      0|}
+Sun Mar 14 17:29:24 PDT 2021
 =====================================================
 To create an output.txt file with all the output from this script
 Run the below command

@@ -1,3 +1,11 @@
+/*
+ * Alan Lai/Steven Chau
+ * CSS 343: Movie Project
+ * Yusuf Pisan
+ * 3/6-14/21
+ * Drama.h
+ * A child that inherits Movie. Drama Movie uses all stock private data members.
+ */
 #ifndef DRAMAMOVIE_H
 #define DRAMAMOVIE_H
 #include "Movie.h"
@@ -33,6 +41,7 @@ public:
 
   bool greaterThan(Movie *m) const override { return (!lessThan(m)); }
 
+  // Sorted by director then title
   bool lessThan(Movie *m) const override {
     if (equals(m)) {
       return false;

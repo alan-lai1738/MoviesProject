@@ -1,3 +1,12 @@
+/*
+ * Alan Lai/Steven Chau
+ * CSS 343: Movie Project
+ * Yusuf Pisan
+ * 3/6-14/21
+ * ClassicMovie.h
+ * A child that inherits Movie. Classic Movie has a major actor and release
+ * month, special to Classic.
+ */
 #ifndef CLASSICMOVIE_H
 #define CLASSICMOVIE_H
 #include "Movie.h"
@@ -50,7 +59,6 @@ public:
   bool equals(Movie *other) const override {
     assert(other != nullptr);
     auto otherMovie = dynamic_cast<ClassicMovie *>(other);
-    // assert(otherMovie && otherMovie == other);
     return (title == otherMovie->title && director == otherMovie->director &&
             releaseMonth == otherMovie->releaseMonth &&
             releaseYear == otherMovie->releaseYear &&
@@ -58,6 +66,7 @@ public:
             majorActorLast == otherMovie->majorActorLast);
   }
 
+  // greaterThan function
   bool greaterThan(Movie *other) const override {
     if (equals(other)) {
       return false;
@@ -65,6 +74,7 @@ public:
     return (!lessThan(other));
   }
 
+  // less Than function for classic: Compares release date then actor name.
   bool lessThan(Movie *other) const override {
     assert(other != nullptr);
     auto rhs = dynamic_cast<ClassicMovie *>(other);

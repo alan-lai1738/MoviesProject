@@ -1,3 +1,12 @@
+/*
+ * Alan Lai/Steven Chau
+ * CSS 343: Movie Project
+ * Yusuf Pisan
+ * 3/6-14/21
+ * ComedyMovie.h
+ * A child that inherits Movie. Comedy Movie uses all stock private data
+ * members.
+ */
 #ifndef COMEDYMOVIE_H
 #define COMEDYMOVIE_H
 #include "Movie.h"
@@ -32,6 +41,7 @@ public:
 
   bool greaterThan(Movie *m) const override { return (!lessThan(m)); }
 
+  // sorted by title then release year
   bool lessThan(Movie *m) const override {
     if (equals(m)) {
       return false;

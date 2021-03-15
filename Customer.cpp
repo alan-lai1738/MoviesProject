@@ -1,3 +1,11 @@
+/*
+ * Alan Lai/Steven Chau
+ * CSS 343: Movie Project
+ * Yusuf Pisan
+ * 3/6-14/21
+ * Customer.cpp
+ * Implements methods required for Customer
+ */
 #include "Customer.h"
 
 Customer::Customer(string first, string last, int id) {
@@ -21,7 +29,7 @@ void Customer::printHistory() {
   if (history.empty()) {
     cout << "History is Empty!" << endl;
   } else {
-    for (int i = history.size() - 1; i > 0; i--) {
+    for (int i = history.size() - 1; i >= 0; i--) {
       cout << *history[i];
     }
   }
