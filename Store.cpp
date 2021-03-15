@@ -151,6 +151,7 @@ void Store::readTransactions(const string &fileName) {
               if (customerDatabase.get(custID)->isCurrentlyBorrowing('C',
                                                                      idx)) {
                 inv->returnMovie(movieType, idx);
+                customerDatabase.get(custID)->returnADVD(movieType[0], idx);
                 Transaction *t = new Transaction(
                     'C', c->getTitle(), c->getDirector(),
                     customerDatabase.get(custID)->getFirstName() + " " +
@@ -199,6 +200,7 @@ void Store::readTransactions(const string &fileName) {
                                  // successfully return it
               {
                 inv->returnMovie(movieType, idx);
+                customerDatabase.get(custID)->returnADVD(movieType[0], idx);
                 Transaction *t = new Transaction(
                     'F', c->getTitle(), c->getDirector(),
                     customerDatabase.get(custID)->getFirstName() + " " +
@@ -247,6 +249,7 @@ void Store::readTransactions(const string &fileName) {
               if (customerDatabase.get(custID)->isCurrentlyBorrowing('D',
                                                                      idx)) {
                 inv->returnMovie(movieType, idx);
+                customerDatabase.get(custID)->returnADVD(movieType[0], idx);
                 Transaction *t = new Transaction(
                     'D', d->getTitle(), d->getDirector(),
                     customerDatabase.get(custID)->getFirstName() + " " +
