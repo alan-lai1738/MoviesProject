@@ -135,6 +135,6 @@ void testAll() {
   testMovies();
   testHashTable();
   testCustomer();
-  // testStoreAndInventory();
+  //testStoreAndInventory();
   testFinal();
 }
