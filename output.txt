@@ -1,4 +1,4 @@
-Sun Mar 14 18:54:43 PDT 2021
+Tue Mar 16 12:51:29 PDT 2021
 Linux csslab9.uwb.edu 3.10.0-1160.11.1.el7.x86_64 #1 SMP Fri Dec 18 16:34:56 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 uid=930027(schau623) gid=2120930027(schau623) groups=2120930027(schau623),605559(lab-access)
 =====================================================
@@ -152,27 +152,27 @@ Running clang-format on ./Transaction.cpp
 =====================================================
 6. No memory leaks using valgrind, look for "definitely lost" 
 =====================================================
-==1496== Memcheck, a memory error detector
-==1496== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1496== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==1496== Command: ./a.out
-==1496== Parent PID: 906
-==1496== 
-==1496== 
-==1496== HEAP SUMMARY:
-==1496==     in use at exit: 14,487 bytes in 162 blocks
-==1496==   total heap usage: 2,849 allocs, 2,687 frees, 191,546 bytes allocated
-==1496== 
-==1496== LEAK SUMMARY:
-==1496==    definitely lost: 1,632 bytes in 14 blocks
-==1496==    indirectly lost: 12,855 bytes in 148 blocks
-==1496==      possibly lost: 0 bytes in 0 blocks
-==1496==    still reachable: 0 bytes in 0 blocks
-==1496==         suppressed: 0 bytes in 0 blocks
-==1496== Rerun with --leak-check=full to see details of leaked memory
-==1496== 
-==1496== For lists of detected and suppressed errors, rerun with: -s
-==1496== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==7806== Memcheck, a memory error detector
+==7806== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7806== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7806== Command: ./a.out
+==7806== Parent PID: 7358
+==7806== 
+==7806== 
+==7806== HEAP SUMMARY:
+==7806==     in use at exit: 14,487 bytes in 162 blocks
+==7806==   total heap usage: 2,849 allocs, 2,687 frees, 191,546 bytes allocated
+==7806== 
+==7806== LEAK SUMMARY:
+==7806==    definitely lost: 1,632 bytes in 14 blocks
+==7806==    indirectly lost: 12,855 bytes in 148 blocks
+==7806==      possibly lost: 0 bytes in 0 blocks
+==7806==    still reachable: 0 bytes in 0 blocks
+==7806==         suppressed: 0 bytes in 0 blocks
+==7806== Rerun with --leak-check=full to see details of leaked memory
+==7806== 
+==7806== For lists of detected and suppressed errors, rerun with: -s
+==7806== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 =====================================================
 7. Tests have full code coverage
 =====================================================
@@ -418,7 +418,7 @@ The lines below were never executed
   122|      0|  s.readTransactions("AlanCommands.txt");
   123|      0|  cout << "Store tests ran" << endl;
   124|      0|}
-Sun Mar 14 18:55:59 PDT 2021
+Tue Mar 16 12:52:32 PDT 2021
 =====================================================
 To create an output.txt file with all the output from this script
 Run the below command
