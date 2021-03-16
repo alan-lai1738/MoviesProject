@@ -41,7 +41,7 @@ Q: -1 for each clang-format warning, min -3: 0
 - Check under *4. clang-format does not find any formatting issues*
 
 
-Q: -2 for any detected memory leak: 0
+Q: -2 for any detected memory leak: -2
 
 - Check under *5. No memory leaks using g++*
 - Check under *6. No memory leaks using valgrind*
@@ -96,4 +96,4 @@ explain returning a movie that customer has not checked out: Store.cpp, readTran
 any static_cast or dynamic_cast used: ClassicMovie.h equals() line 61, lessThan line 80
 
 
-Q: Total points: 25/25 (max 25)
+Q: Total points: 23/25 (max 25)
