@@ -1,5 +1,11 @@
 # MoviesProject
 
+# Description
+Our Movie Project takes in a list of Movies to be stored into Inventory. Then, we add our customers to a customer database in store which is stored in  a HashMap by Customer ID and 
+Customer object. After, we process commands where customers can borrow different Movies and/or return DVDs they already checked out. In cases where there isn't stock left or they are returning
+a DVD they didn't return, the program will show a message for the error.
+
+# Overview
 A local movie rental store wishes to automate their inventory tracking system. Currently there are three types of movies/videos (in DVD media) to be tracked:
 
 Comedy (denoted as ‘F’ for funny)
@@ -13,7 +19,7 @@ Inventory (denoted as ‘I’): outputs the inventory of all the items in the st
 History (denoted as ‘H’): outputs all the transactions of a customer 
 
 # UML Design
-![image]https://cdn.discordapp.com/attachments/557811688347533333/880541231552278528/UML_Movie_1.jpg
+![image](https://cdn.discordapp.com/attachments/557811688347533333/880541231552278528/UML_Movie_1.jpg)
 
 The information about each movie is listed as follows: 
 
@@ -29,11 +35,8 @@ C, 10, George Cukor, Holiday, Cary Grant 9 1938
 Z, 10, Hal Ashby, Harold and Maude, Ruth Gordon 2 1971
 D, 10, Phillippe De Broca, King of Hearts, 1967
 
-Our Movie Project takes in a list of Movies to be stored into Inventory. Then, we add our customers to a customer database in store which is stored in  a HashMap by Customer ID and 
-Customer object. After, we process commands where customers can borrow different Movies and/or return DVDs they already checked out. In cases where there isn't stock left or they are returning
-a DVD they didn't return, the program will show a message for the error.
 
-#Constraints
+# Constraints
 You may assume correct formatting, but codes may be invalid; e.g., in this data, the 'Z' code is an invalid entry so this line has to be discarded and users should be notified about this issue. 
 While the stock for each line is 10, do not assume that is the case in your design and implementation.
 The movies should be sorted as follows when stored in the system:
