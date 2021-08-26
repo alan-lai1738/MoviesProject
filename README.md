@@ -82,21 +82,3 @@ B 1234 D Y 2 1971 Ruth Gordon
 B 9999 D F Pirates of the Caribbean, 2003
 B 1234 D C 2 1975 Blah Blah     
 
-or
-
-B 0000 D C 3 2021 Rin Shima
-B 8888 D F BanG Dream!: Episode of Roselia I, 2018
-B 7777 D F BanG Dream!: Episode of Roselia I, 2018
-B 6666 D F BanG Dream!: Episode of Roselia I, 2018
-B 5555 D F BanG Dream!: Episode of Roselia I, 2018
-B 4444 D F BanG Dream!: Episode of Roselia I, 2018
-B 3333 D F BanG Dream!: Episode of Roselia I, 2018
-B 2222 D F BanG Dream!: Episode of Roselia I, 2018
-B 1111 D F BanG Dream!: Episode of Roselia I, 2018
-B 0000 D F BanG Dream!: Episode of Roselia I, 2018
-B 4893 D F Totally a real movie, 93123
-R 7777 D C 1 2014 Ran Mitake
-R 7777 D F BanG Dream!: Episode of Roselia I, 2018
-R 7777 D F BanG Dream!: Episode of Roselia I, 2018
-H 7777
-I
